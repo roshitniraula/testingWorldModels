@@ -1,0 +1,20 @@
+# Local Python virtual environment (~1.8GB, recreate via README instructions)
+wm-interp/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# nbconvert's executed-notebook output (regenerated per run; embeds base64
+# plot images, so it bloats history fast -- WMIP.ipynb is the source of
+# truth, this is a build artifact)
+WMIP_executed.ipynb
+
+# Python
+__pycache__/
+*.pyc
+
+# Harness bookkeeping (not part of the project)
+.claude/
+
+# OS
+.DS_Store

@@ -1,0 +1,344 @@
+{
+  "run_tag": "mac",
+  "device": "cpu",
+  "timestamp": "2026-08-02T21:52:57.863601",
+  "random_seed": 0,
+  "n_epochs_baseline": 100,
+  "strongest_color_layer_L": 0,
+  "other_layer_L": 1,
+  "scripted_policy_prob": 0.5,
+  "scripted_noise_prob": 0.1,
+  "policy_coverage_check": {
+    "pure_random": {
+      "key_pickup_rate": 0.43,
+      "door_open_rate": 0.035,
+      "goal_reach_rate": 0.0
+    },
+    "mixed_policy": {
+      "key_pickup_rate": 0.675,
+      "door_open_rate": 0.455,
+      "goal_reach_rate": 0.44
+    }
+  },
+  "baseline": {
+    "in_dist": {
+      "exact_match_acc": 0.28969128996692395,
+      "per_cell_acc": 0.9683965249703949
+    },
+    "ood": {
+      "exact_match_acc": 0.13138552002940096,
+      "per_cell_acc": 0.9264669851770182
+    },
+    "probe_B_acc": 1.0,
+    "probe_A_r2": 0.8314363360404968
+  },
+  "method_a_single_direction_ablation": {
+    "ood": {
+      "exact_match_acc": 0.02866593164277839,
+      "per_cell_acc": 0.883143962595451
+    },
+    "in_dist_control": {
+      "exact_match_acc": 0.048787210584343994,
+      "per_cell_acc": 0.9007360447547879
+    },
+    "probe_B_acc_post_ablation": 0.9984189723320158
+  },
+  "method_a_multi_direction_ablation": {
+    "k_max": 5,
+    "rounds": [
+      {
+        "k": 0,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.13399058928971544,
+        "indist_exact_match": 0.29486892224960787,
+        "ood_per_cell": 0.9271541315009834,
+        "indist_per_cell": 0.9690666467498195
+      },
+      {
+        "k": 1,
+        "probe_B_acc": 0.9984189723320158,
+        "ood_exact_match": 0.03540219583239973,
+        "indist_exact_match": 0.055119874523862876,
+        "ood_per_cell": 0.8856337291806707,
+        "indist_per_cell": 0.9046045261035178
+      },
+      {
+        "k": 2,
+        "probe_B_acc": 0.8940711462450592,
+        "ood_exact_match": 0.014788259018597356,
+        "indist_exact_match": 0.025991485547837777,
+        "ood_per_cell": 0.8210346802101227,
+        "indist_per_cell": 0.8185824184031668
+      },
+      {
+        "k": 3,
+        "probe_B_acc": 0.8584980237154151,
+        "ood_exact_match": 0.021734259466726417,
+        "indist_exact_match": 0.025095227425498544,
+        "ood_per_cell": 0.8175243358976274,
+        "indist_per_cell": 0.791750690865636
+      },
+      {
+        "k": 4,
+        "probe_B_acc": 0.8276679841897233,
+        "ood_exact_match": 0.01994174322204795,
+        "indist_exact_match": 0.02016580775263276,
+        "ood_per_cell": 0.7976884009261334,
+        "indist_per_cell": 0.7694251499987552
+      },
+      {
+        "k": 5,
+        "probe_B_acc": 0.7810276679841898,
+        "ood_exact_match": 0.00022406453058480843,
+        "indist_exact_match": 0.0,
+        "ood_per_cell": 0.7840951527373217,
+        "indist_per_cell": 0.7444855229417183
+      }
+    ],
+    "random_direction_control_rounds": [
+      {
+        "k": 0,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.13399058928971544,
+        "indist_exact_match": 0.29486892224960787,
+        "ood_per_cell": 0.9271541315009834,
+        "indist_per_cell": 0.9690666467498195
+      },
+      {
+        "k": 1,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.09814026439614609,
+        "indist_exact_match": 0.24915975801030696,
+        "ood_per_cell": 0.9150546468494037,
+        "indist_per_cell": 0.9619899419921827
+      },
+      {
+        "k": 2,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.08760923145866009,
+        "indist_exact_match": 0.23392336993054,
+        "ood_per_cell": 0.9129073617646326,
+        "indist_per_cell": 0.9593758558020266
+      },
+      {
+        "k": 3,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.05803271342146538,
+        "indist_exact_match": 0.1622227201434013,
+        "ood_per_cell": 0.9035526676127169,
+        "indist_per_cell": 0.9438033709263823
+      },
+      {
+        "k": 4,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.055119874523862876,
+        "indist_exact_match": 0.11942639480170289,
+        "ood_per_cell": 0.9067518111882888,
+        "indist_per_cell": 0.9331727537530808
+      },
+      {
+        "k": 5,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.04279632534169841,
+        "indist_exact_match": 0.10441407125252072,
+        "ood_per_cell": 0.9058057609480419,
+        "indist_per_cell": 0.9333594741952349
+      }
+    ],
+    "probe_B_majority_class_baseline": 0.49493991144845034,
+    "other_layer_rounds": [
+      {
+        "k": 0,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.13399058928971544,
+        "indist_exact_match": 0.29486892224960787,
+        "ood_per_cell": 0.9271541315009834,
+        "indist_per_cell": 0.9690666467498195
+      },
+      {
+        "k": 1,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.02016580775263276,
+        "indist_exact_match": 0.0557920681156173,
+        "ood_per_cell": 0.896009161749695,
+        "indist_per_cell": 0.9013804864689919
+      },
+      {
+        "k": 2,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.01814922697736948,
+        "indist_exact_match": 0.01837329150795429,
+        "ood_per_cell": 0.7822341723305201,
+        "indist_per_cell": 0.8073293997560186
+      },
+      {
+        "k": 3,
+        "probe_B_acc": 1.0,
+        "ood_exact_match": 0.0,
+        "indist_exact_match": 0.0,
+        "ood_per_cell": 0.5863831005551822,
+        "indist_per_cell": 0.6323474493987602
+      },
+      {
+        "k": 4,
+        "probe_B_acc": 0.9786561264822135,
+        "ood_exact_match": 0.0,
+        "indist_exact_match": 0.0,
+        "ood_per_cell": 0.5869121418079518,
+        "indist_per_cell": 0.610843478477357
+      },
+      {
+        "k": 5,
+        "probe_B_acc": 0.9636363636363636,
+        "ood_exact_match": 0.0,
+        "indist_exact_match": 0.0,
+        "ood_per_cell": 0.5817648816192397,
+        "indist_per_cell": 0.6000759329798093
+      }
+    ]
+  },
+  "method_a_head_path_patching": {
+    "patch_n_episodes": 100,
+    "corrupted_baseline_exact_match": 0.11592946201562881,
+    "corrupted_baseline_per_cell": 0.9335228800773621,
+    "per_head_results": [
+      {
+        "layer": 0,
+        "head": 0,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.8962127566337585,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.037310123443603516
+      },
+      {
+        "layer": 0,
+        "head": 1,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.8928720355033875,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.04065084457397461
+      },
+      {
+        "layer": 0,
+        "head": 2,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.8854437470436096,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.04807913303375244
+      },
+      {
+        "layer": 0,
+        "head": 3,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.906781017780304,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.026741862297058105
+      },
+      {
+        "layer": 1,
+        "head": 0,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.9109328389167786,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.022590041160583496
+      },
+      {
+        "layer": 1,
+        "head": 1,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.8965340256690979,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.03698885440826416
+      },
+      {
+        "layer": 1,
+        "head": 2,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.8871221542358398,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.04640072584152222
+      },
+      {
+        "layer": 1,
+        "head": 3,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.9129003286361694,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.020622551441192627
+      }
+    ],
+    "layer_level_results": [
+      {
+        "layer": 0,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.8909928798675537,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.04253000020980835
+      },
+      {
+        "layer": 1,
+        "exact_match": 0.11592946201562881,
+        "per_cell": 0.8481096029281616,
+        "exact_match_delta": 0.0,
+        "per_cell_delta": -0.08541327714920044
+      }
+    ]
+  },
+  "method_b_adversarial": {
+    "0.5": {
+      "in_dist": {
+        "exact_match_acc": 0.029492833517089305,
+        "per_cell_acc": 0.9115087386173384
+      },
+      "ood": {
+        "exact_match_acc": 0.018375597206909223,
+        "per_cell_acc": 0.8624076115807097
+      },
+      "probe_B_acc": 0.9541501976284585
+    },
+    "1.0": {
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.8577524602882927
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.8293468496059455
+      },
+      "probe_B_acc": 0.4743083003952569
+    },
+    "1.5": {
+      "in_dist": {
+        "exact_match_acc": 0.0033994854832782063,
+        "per_cell_acc": 0.9005191106210951
+      },
+      "ood": {
+        "exact_match_acc": 0.0011944138184490996,
+        "per_cell_acc": 0.8406937808812119
+      },
+      "probe_B_acc": 0.4743083003952569
+    },
+    "2.0": {
+      "in_dist": {
+        "exact_match_acc": 0.002205071664829107,
+        "per_cell_acc": 0.8957950508391522
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.8695077381681572
+      },
+      "probe_B_acc": 0.4743083003952569
+    },
+    "5.0": {
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.83780728081996
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.8091030666830006
+      },
+      "probe_B_acc": 0.4743083003952569
+    }
+  }
+}
