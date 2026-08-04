@@ -1,0 +1,526 @@
+Device: cpu
+Grid: 18 points (6 strengths x 3 seeds), 0 already completed
+
+=== strength=1.0 seed=0 ===
+[strength=1.0 seed=0] training baseline...
+epoch 0: loss 1.0414
+epoch 25: loss 0.1677
+epoch 50: loss 0.1323
+epoch 75: loss 0.1141
+epoch 99: loss 0.1026
+[strength=1.0 seed=0] baseline in-dist=0.3037 OOD=0.1348
+[strength=1.0 seed=0] strongest color layer L=0 (Probe B acc=1.0000, chance=0.4949)
+[greedy s=1.0 seed=0] k=0: Probe B acc=1.0000  OOD exact=0.1237 (per-cell 0.9258)  In-dist exact=0.2767 (per-cell 0.9673)
+[greedy s=1.0 seed=0] k=1: Probe B acc=0.9984  OOD exact=0.0325 (per-cell 0.8821)  In-dist exact=0.0519 (per-cell 0.9023)
+[greedy s=1.0 seed=0] k=2: Probe B acc=0.8941  OOD exact=0.0128 (per-cell 0.8142)  In-dist exact=0.0233 (per-cell 0.8120)
+[greedy s=1.0 seed=0] k=3: Probe B acc=0.8585  OOD exact=0.0179 (per-cell 0.8091)  In-dist exact=0.0209 (per-cell 0.7847)
+[greedy s=1.0 seed=0] k=4: Probe B acc=0.8277  OOD exact=0.0081 (per-cell 0.7883)  In-dist exact=0.0081 (per-cell 0.7613)
+[greedy s=1.0 seed=0] k=5: Probe B acc=0.7810  OOD exact=0.0003 (per-cell 0.7772)  In-dist exact=0.0000 (per-cell 0.7378)
+[random s=1.0 seed=0] k=0: Probe B acc=1.0000  OOD exact=0.1237 (per-cell 0.9258)  In-dist exact=0.2767 (per-cell 0.9673)
+[random s=1.0 seed=0] k=1: Probe B acc=1.0000  OOD exact=0.0835 (per-cell 0.9133)  In-dist exact=0.2293 (per-cell 0.9603)
+[random s=1.0 seed=0] k=2: Probe B acc=1.0000  OOD exact=0.0781 (per-cell 0.9113)  In-dist exact=0.2179 (per-cell 0.9578)
+[random s=1.0 seed=0] k=3: Probe B acc=1.0000  OOD exact=0.0543 (per-cell 0.9015)  In-dist exact=0.1497 (per-cell 0.9418)
+[random s=1.0 seed=0] k=4: Probe B acc=1.0000  OOD exact=0.0495 (per-cell 0.9048)  In-dist exact=0.1178 (per-cell 0.9323)
+[random s=1.0 seed=0] k=5: Probe B acc=1.0000  OOD exact=0.0367 (per-cell 0.9035)  In-dist exact=0.1047 (per-cell 0.9325)
+[strength=1.0 seed=0] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.6671  adv_loss 3.8931
+  lambd=2.0 epoch 25: task_loss 1.6857  adv_loss 12.1951
+  lambd=2.0 epoch 50: task_loss 208.2773  adv_loss 2554.6606
+  lambd=2.0 epoch 75: task_loss 1950.5014  adv_loss 29513.8418
+  lambd=2.0 epoch 99: task_loss 8483.9598  adv_loss 76304.4298
+=== strength=1.0 seed=0 done in 2596s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=1.0 seed=1 ===
+[strength=1.0 seed=1] training baseline...
+epoch 0: loss 0.9808
+epoch 25: loss 0.1445
+epoch 50: loss 0.1090
+epoch 75: loss 0.0929
+epoch 99: loss 0.0834
+[strength=1.0 seed=1] baseline in-dist=0.3587 OOD=0.1337
+[strength=1.0 seed=1] strongest color layer L=0 (Probe B acc=1.0000, chance=0.5457)
+[greedy s=1.0 seed=1] k=0: Probe B acc=1.0000  OOD exact=0.1476 (per-cell 0.9313)  In-dist exact=0.3205 (per-cell 0.9703)
+[greedy s=1.0 seed=1] k=1: Probe B acc=1.0000  OOD exact=0.1184 (per-cell 0.9273)  In-dist exact=0.1613 (per-cell 0.9402)
+[greedy s=1.0 seed=1] k=2: Probe B acc=0.9907  OOD exact=0.0000 (per-cell 0.6776)  In-dist exact=0.0000 (per-cell 0.7138)
+[greedy s=1.0 seed=1] k=3: Probe B acc=0.9072  OOD exact=0.0000 (per-cell 0.6630)  In-dist exact=0.0000 (per-cell 0.7129)
+[greedy s=1.0 seed=1] k=4: Probe B acc=0.8329  OOD exact=0.0000 (per-cell 0.6419)  In-dist exact=0.0000 (per-cell 0.6804)
+[greedy s=1.0 seed=1] k=5: Probe B acc=0.8082  OOD exact=0.0000 (per-cell 0.6390)  In-dist exact=0.0000 (per-cell 0.6748)
+[random s=1.0 seed=1] k=0: Probe B acc=1.0000  OOD exact=0.1476 (per-cell 0.9313)  In-dist exact=0.3205 (per-cell 0.9703)
+[random s=1.0 seed=1] k=1: Probe B acc=1.0000  OOD exact=0.1404 (per-cell 0.9283)  In-dist exact=0.2916 (per-cell 0.9670)
+[random s=1.0 seed=1] k=2: Probe B acc=1.0000  OOD exact=0.0525 (per-cell 0.9134)  In-dist exact=0.1184 (per-cell 0.9338)
+[random s=1.0 seed=1] k=3: Probe B acc=1.0000  OOD exact=0.0403 (per-cell 0.8917)  In-dist exact=0.1029 (per-cell 0.9296)
+[random s=1.0 seed=1] k=4: Probe B acc=1.0000  OOD exact=0.0167 (per-cell 0.8715)  In-dist exact=0.0349 (per-cell 0.9061)
+[random s=1.0 seed=1] k=5: Probe B acc=1.0000  OOD exact=0.0176 (per-cell 0.8663)  In-dist exact=0.0361 (per-cell 0.9022)
+[strength=1.0 seed=1] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.8630  adv_loss 15.2852
+  lambd=2.0 epoch 25: task_loss 5.7636  adv_loss 87.2581
+  lambd=2.0 epoch 50: task_loss 234.3751  adv_loss 3139.4162
+  lambd=2.0 epoch 75: task_loss 1560.6911  adv_loss 19000.0077
+  lambd=2.0 epoch 99: task_loss 4451.2272  adv_loss 53073.2675
+=== strength=1.0 seed=1 done in 5327s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=1.0 seed=2 ===
+[strength=1.0 seed=2] training baseline...
+epoch 0: loss 0.9997
+epoch 25: loss 0.1748
+epoch 50: loss 0.1332
+epoch 75: loss 0.1136
+epoch 99: loss 0.1021
+[strength=1.0 seed=2] baseline in-dist=0.3167 OOD=0.1048
+[strength=1.0 seed=2] strongest color layer L=0 (Probe B acc=1.0000, chance=0.5158)
+[greedy s=1.0 seed=2] k=0: Probe B acc=1.0000  OOD exact=0.0933 (per-cell 0.9174)  In-dist exact=0.2788 (per-cell 0.9653)
+[greedy s=1.0 seed=2] k=1: Probe B acc=1.0000  OOD exact=0.0045 (per-cell 0.8603)  In-dist exact=0.0361 (per-cell 0.8405)
+[greedy s=1.0 seed=2] k=2: Probe B acc=1.0000  OOD exact=0.0000 (per-cell 0.6433)  In-dist exact=0.0000 (per-cell 0.6524)
+[greedy s=1.0 seed=2] k=3: Probe B acc=0.9541  OOD exact=0.0000 (per-cell 0.6360)  In-dist exact=0.0000 (per-cell 0.6503)
+[greedy s=1.0 seed=2] k=4: Probe B acc=0.9216  OOD exact=0.0000 (per-cell 0.6435)  In-dist exact=0.0000 (per-cell 0.6572)
+[greedy s=1.0 seed=2] k=5: Probe B acc=0.8972  OOD exact=0.0000 (per-cell 0.6623)  In-dist exact=0.0000 (per-cell 0.6729)
+[random s=1.0 seed=2] k=0: Probe B acc=1.0000  OOD exact=0.0933 (per-cell 0.9174)  In-dist exact=0.2788 (per-cell 0.9653)
+[random s=1.0 seed=2] k=1: Probe B acc=1.0000  OOD exact=0.0024 (per-cell 0.8659)  In-dist exact=0.0909 (per-cell 0.9110)
+[random s=1.0 seed=2] k=2: Probe B acc=1.0000  OOD exact=0.0164 (per-cell 0.8906)  In-dist exact=0.1351 (per-cell 0.9308)
+[random s=1.0 seed=2] k=3: Probe B acc=1.0000  OOD exact=0.0268 (per-cell 0.8931)  In-dist exact=0.1413 (per-cell 0.9317)
+[random s=1.0 seed=2] k=4: Probe B acc=1.0000  OOD exact=0.0170 (per-cell 0.8917)  In-dist exact=0.0871 (per-cell 0.9302)
+[random s=1.0 seed=2] k=5: Probe B acc=1.0000  OOD exact=0.0322 (per-cell 0.8982)  In-dist exact=0.1112 (per-cell 0.9335)
+[strength=1.0 seed=2] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.7331  adv_loss 7.5851
+  lambd=2.0 epoch 25: task_loss 2.6215  adv_loss 37.9550
+  lambd=2.0 epoch 50: task_loss 619.1378  adv_loss 5500.5972
+  lambd=2.0 epoch 75: task_loss 4404.0332  adv_loss 44800.5899
+  lambd=2.0 epoch 99: task_loss 14466.5605  adv_loss 113746.3445
+=== strength=1.0 seed=2 done in 2349s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.9 seed=0 ===
+[strength=0.9 seed=0] training baseline...
+epoch 0: loss 1.0628
+epoch 25: loss 0.1910
+epoch 50: loss 0.1564
+epoch 75: loss 0.1390
+epoch 99: loss 0.1279
+[strength=0.9 seed=0] baseline in-dist=0.2716 OOD=0.1448
+[strength=0.9 seed=0] strongest color layer L=1 (Probe B acc=0.9976, chance=0.4949)
+[greedy s=0.9 seed=0] k=0: Probe B acc=0.9976  OOD exact=0.1318 (per-cell 0.9080)  In-dist exact=0.2507 (per-cell 0.9590)
+[greedy s=0.9 seed=0] k=1: Probe B acc=0.9945  OOD exact=0.0710 (per-cell 0.9155)  In-dist exact=0.1041 (per-cell 0.9039)
+[greedy s=0.9 seed=0] k=2: Probe B acc=0.9953  OOD exact=0.0015 (per-cell 0.7735)  In-dist exact=0.0289 (per-cell 0.7440)
+[greedy s=0.9 seed=0] k=3: Probe B acc=0.9960  OOD exact=0.0083 (per-cell 0.7846)  In-dist exact=0.0224 (per-cell 0.7394)
+[greedy s=0.9 seed=0] k=4: Probe B acc=0.9945  OOD exact=0.0000 (per-cell 0.6146)  In-dist exact=0.0000 (per-cell 0.6350)
+[greedy s=0.9 seed=0] k=5: Probe B acc=0.9945  OOD exact=0.0000 (per-cell 0.6253)  In-dist exact=0.0000 (per-cell 0.6520)
+[random s=0.9 seed=0] k=0: Probe B acc=0.9976  OOD exact=0.1318 (per-cell 0.9080)  In-dist exact=0.2507 (per-cell 0.9590)
+[random s=0.9 seed=0] k=1: Probe B acc=0.9976  OOD exact=0.1133 (per-cell 0.9259)  In-dist exact=0.2215 (per-cell 0.9550)
+[random s=0.9 seed=0] k=2: Probe B acc=0.9976  OOD exact=0.0653 (per-cell 0.9231)  In-dist exact=0.1732 (per-cell 0.9533)
+[random s=0.9 seed=0] k=3: Probe B acc=0.9976  OOD exact=0.0265 (per-cell 0.8880)  In-dist exact=0.0906 (per-cell 0.9385)
+[random s=0.9 seed=0] k=4: Probe B acc=0.9976  OOD exact=0.0253 (per-cell 0.8886)  In-dist exact=0.0835 (per-cell 0.9355)
+[random s=0.9 seed=0] k=5: Probe B acc=0.9976  OOD exact=0.0429 (per-cell 0.8923)  In-dist exact=0.1038 (per-cell 0.9366)
+[strength=0.9 seed=0] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 1.1660  adv_loss 8.0329
+  lambd=2.0 epoch 25: task_loss 6.7157  adv_loss 31.8091
+  lambd=2.0 epoch 50: task_loss 1893.3150  adv_loss 8842.2697
+  lambd=2.0 epoch 75: task_loss 13816.0819  adv_loss 79578.1087
+  lambd=2.0 epoch 99: task_loss 37527.5029  adv_loss 206139.8523
+=== strength=0.9 seed=0 done in 46351s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.9 seed=1 ===
+[strength=0.9 seed=1] training baseline...
+epoch 0: loss 0.9954
+epoch 25: loss 0.1669
+epoch 50: loss 0.1314
+epoch 75: loss 0.1151
+epoch 99: loss 0.1056
+[strength=0.9 seed=1] baseline in-dist=0.3340 OOD=0.1640
+[strength=0.9 seed=1] strongest color layer L=1 (Probe B acc=0.9969, chance=0.5457)
+[greedy s=0.9 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1679 (per-cell 0.9273)  In-dist exact=0.3047 (per-cell 0.9641)
+[greedy s=0.9 seed=1] k=1: Probe B acc=0.9954  OOD exact=0.1184 (per-cell 0.9165)  In-dist exact=0.1458 (per-cell 0.8664)
+[greedy s=0.9 seed=1] k=2: Probe B acc=0.9954  OOD exact=0.0012 (per-cell 0.7432)  In-dist exact=0.0277 (per-cell 0.6540)
+[greedy s=0.9 seed=1] k=3: Probe B acc=0.9946  OOD exact=0.0000 (per-cell 0.6114)  In-dist exact=0.0000 (per-cell 0.6151)
+[greedy s=0.9 seed=1] k=4: Probe B acc=0.9907  OOD exact=0.0000 (per-cell 0.6223)  In-dist exact=0.0000 (per-cell 0.6316)
+[greedy s=0.9 seed=1] k=5: Probe B acc=0.9884  OOD exact=0.0000 (per-cell 0.6237)  In-dist exact=0.0000 (per-cell 0.6435)
+[random s=0.9 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1679 (per-cell 0.9273)  In-dist exact=0.3047 (per-cell 0.9641)
+[random s=0.9 seed=1] k=1: Probe B acc=0.9969  OOD exact=0.1601 (per-cell 0.9232)  In-dist exact=0.2984 (per-cell 0.9645)
+[random s=0.9 seed=1] k=2: Probe B acc=0.9969  OOD exact=0.0394 (per-cell 0.8747)  In-dist exact=0.0730 (per-cell 0.9192)
+[random s=0.9 seed=1] k=3: Probe B acc=0.9969  OOD exact=0.0405 (per-cell 0.8789)  In-dist exact=0.0665 (per-cell 0.9050)
+[random s=0.9 seed=1] k=4: Probe B acc=0.9969  OOD exact=0.0403 (per-cell 0.8738)  In-dist exact=0.0492 (per-cell 0.8976)
+[random s=0.9 seed=1] k=5: Probe B acc=0.9969  OOD exact=0.0411 (per-cell 0.8722)  In-dist exact=0.0504 (per-cell 0.8990)
+[strength=0.9 seed=1] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 2.0971  adv_loss 18.8481
+  lambd=2.0 epoch 25: task_loss 86.8524  adv_loss 348.9477
+  lambd=2.0 epoch 50: task_loss 4213.3155  adv_loss 15012.8291
+  lambd=2.0 epoch 75: task_loss 18759.3526  adv_loss 75784.1141
+  lambd=2.0 epoch 99: task_loss 47831.2462  adv_loss 157299.7480
+=== strength=0.9 seed=1 done in 5851s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.9 seed=2 ===
+[strength=0.9 seed=2] training baseline...
+epoch 0: loss 1.0187
+epoch 25: loss 0.2002
+epoch 50: loss 0.1590
+epoch 75: loss 0.1394
+epoch 99: loss 0.1277
+[strength=0.9 seed=2] baseline in-dist=0.2810 OOD=0.1330
+[strength=0.9 seed=2] strongest color layer L=1 (Probe B acc=1.0000, chance=0.5158)
+[greedy s=0.9 seed=2] k=0: Probe B acc=1.0000  OOD exact=0.1130 (per-cell 0.9243)  In-dist exact=0.2609 (per-cell 0.9590)
+[greedy s=0.9 seed=2] k=1: Probe B acc=0.9985  OOD exact=0.0915 (per-cell 0.9042)  In-dist exact=0.1237 (per-cell 0.9021)
+[greedy s=0.9 seed=2] k=2: Probe B acc=0.9956  OOD exact=0.0176 (per-cell 0.8592)  In-dist exact=0.0483 (per-cell 0.8524)
+[greedy s=0.9 seed=2] k=3: Probe B acc=0.9970  OOD exact=0.0036 (per-cell 0.8644)  In-dist exact=0.0304 (per-cell 0.8329)
+[greedy s=0.9 seed=2] k=4: Probe B acc=0.9882  OOD exact=0.0000 (per-cell 0.6238)  In-dist exact=0.0000 (per-cell 0.6179)
+[greedy s=0.9 seed=2] k=5: Probe B acc=0.9867  OOD exact=0.0000 (per-cell 0.6226)  In-dist exact=0.0000 (per-cell 0.6178)
+[random s=0.9 seed=2] k=0: Probe B acc=1.0000  OOD exact=0.1130 (per-cell 0.9243)  In-dist exact=0.2609 (per-cell 0.9590)
+[random s=0.9 seed=2] k=1: Probe B acc=1.0000  OOD exact=0.0587 (per-cell 0.9123)  In-dist exact=0.1774 (per-cell 0.9501)
+[random s=0.9 seed=2] k=2: Probe B acc=1.0000  OOD exact=0.0423 (per-cell 0.8976)  In-dist exact=0.1452 (per-cell 0.9396)
+[random s=0.9 seed=2] k=3: Probe B acc=1.0000  OOD exact=0.0352 (per-cell 0.8849)  In-dist exact=0.1172 (per-cell 0.9286)
+[random s=0.9 seed=2] k=4: Probe B acc=1.0000  OOD exact=0.0379 (per-cell 0.8901)  In-dist exact=0.1100 (per-cell 0.9320)
+[random s=0.9 seed=2] k=5: Probe B acc=1.0000  OOD exact=0.0376 (per-cell 0.8682)  In-dist exact=0.0704 (per-cell 0.8944)
+[strength=0.9 seed=2] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 1.1605  adv_loss 8.9766
+  lambd=2.0 epoch 25: task_loss 695.0903  adv_loss 2710.4077
+  lambd=2.0 epoch 50: task_loss 8609.1698  adv_loss 40833.7103
+  lambd=2.0 epoch 75: task_loss 29251.2090  adv_loss 172978.6955
+  lambd=2.0 epoch 99: task_loss 66842.4113  adv_loss 383758.6115
+=== strength=0.9 seed=2 done in 2649s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.8 seed=0 ===
+[strength=0.8 seed=0] training baseline...
+epoch 0: loss 1.0742
+epoch 25: loss 0.2024
+epoch 50: loss 0.1680
+epoch 75: loss 0.1506
+epoch 99: loss 0.1395
+[strength=0.8 seed=0] baseline in-dist=0.2557 OOD=0.1558
+[strength=0.8 seed=0] strongest color layer L=1 (Probe B acc=0.9976, chance=0.4949)
+[greedy s=0.8 seed=0] k=0: Probe B acc=0.9976  OOD exact=0.1455 (per-cell 0.9146)  In-dist exact=0.2412 (per-cell 0.9520)
+[greedy s=0.8 seed=0] k=1: Probe B acc=0.9945  OOD exact=0.0730 (per-cell 0.9146)  In-dist exact=0.1026 (per-cell 0.9041)
+[greedy s=0.8 seed=0] k=2: Probe B acc=0.9937  OOD exact=0.0012 (per-cell 0.7582)  In-dist exact=0.0262 (per-cell 0.7432)
+[greedy s=0.8 seed=0] k=3: Probe B acc=0.9929  OOD exact=0.0009 (per-cell 0.7630)  In-dist exact=0.0203 (per-cell 0.7320)
+[greedy s=0.8 seed=0] k=4: Probe B acc=0.9897  OOD exact=0.0000 (per-cell 0.6441)  In-dist exact=0.0000 (per-cell 0.6625)
+[greedy s=0.8 seed=0] k=5: Probe B acc=0.9889  OOD exact=0.0000 (per-cell 0.6341)  In-dist exact=0.0000 (per-cell 0.6357)
+[random s=0.8 seed=0] k=0: Probe B acc=0.9976  OOD exact=0.1455 (per-cell 0.9146)  In-dist exact=0.2412 (per-cell 0.9520)
+[random s=0.8 seed=0] k=1: Probe B acc=0.9960  OOD exact=0.1145 (per-cell 0.9241)  In-dist exact=0.2045 (per-cell 0.9470)
+[random s=0.8 seed=0] k=2: Probe B acc=0.9960  OOD exact=0.0665 (per-cell 0.9233)  In-dist exact=0.1574 (per-cell 0.9452)
+[random s=0.8 seed=0] k=3: Probe B acc=0.9960  OOD exact=0.0304 (per-cell 0.8942)  In-dist exact=0.0877 (per-cell 0.9320)
+[random s=0.8 seed=0] k=4: Probe B acc=0.9968  OOD exact=0.0316 (per-cell 0.8944)  In-dist exact=0.0817 (per-cell 0.9283)
+[random s=0.8 seed=0] k=5: Probe B acc=0.9968  OOD exact=0.0426 (per-cell 0.8994)  In-dist exact=0.0936 (per-cell 0.9291)
+[strength=0.8 seed=0] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 1.1234  adv_loss 7.2256
+  lambd=2.0 epoch 25: task_loss 511.9091  adv_loss 2608.7850
+  lambd=2.0 epoch 50: task_loss 7206.7735  adv_loss 33182.9040
+  lambd=2.0 epoch 75: task_loss 27794.3288  adv_loss 140329.7160
+  lambd=2.0 epoch 99: task_loss 58662.6251  adv_loss 300866.8472
+=== strength=0.8 seed=0 done in 2426s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.8 seed=1 ===
+[strength=0.8 seed=1] training baseline...
+epoch 0: loss 1.0085
+epoch 25: loss 0.1825
+epoch 50: loss 0.1464
+epoch 75: loss 0.1299
+epoch 99: loss 0.1200
+[strength=0.8 seed=1] baseline in-dist=0.3145 OOD=0.1936
+[strength=0.8 seed=1] strongest color layer L=1 (Probe B acc=0.9969, chance=0.5457)
+[greedy s=0.8 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1893 (per-cell 0.9348)  In-dist exact=0.2967 (per-cell 0.9570)
+[greedy s=0.8 seed=1] k=1: Probe B acc=0.9961  OOD exact=0.1181 (per-cell 0.9135)  In-dist exact=0.1410 (per-cell 0.8748)
+[greedy s=0.8 seed=1] k=2: Probe B acc=0.9954  OOD exact=0.0000 (per-cell 0.7227)  In-dist exact=0.0125 (per-cell 0.6617)
+[greedy s=0.8 seed=1] k=3: Probe B acc=0.9938  OOD exact=0.0000 (per-cell 0.6625)  In-dist exact=0.0000 (per-cell 0.6424)
+[greedy s=0.8 seed=1] k=4: Probe B acc=0.9938  OOD exact=0.0000 (per-cell 0.6569)  In-dist exact=0.0000 (per-cell 0.6275)
+[greedy s=0.8 seed=1] k=5: Probe B acc=0.9915  OOD exact=0.0000 (per-cell 0.6510)  In-dist exact=0.0000 (per-cell 0.6213)
+[random s=0.8 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1893 (per-cell 0.9348)  In-dist exact=0.2967 (per-cell 0.9570)
+[random s=0.8 seed=1] k=1: Probe B acc=0.9977  OOD exact=0.1813 (per-cell 0.9338)  In-dist exact=0.2797 (per-cell 0.9574)
+[random s=0.8 seed=1] k=2: Probe B acc=0.9977  OOD exact=0.0438 (per-cell 0.8900)  In-dist exact=0.0704 (per-cell 0.9141)
+[random s=0.8 seed=1] k=3: Probe B acc=0.9977  OOD exact=0.0483 (per-cell 0.8846)  In-dist exact=0.0668 (per-cell 0.8982)
+[random s=0.8 seed=1] k=4: Probe B acc=0.9977  OOD exact=0.0408 (per-cell 0.8692)  In-dist exact=0.0477 (per-cell 0.8912)
+[random s=0.8 seed=1] k=5: Probe B acc=0.9977  OOD exact=0.0426 (per-cell 0.8699)  In-dist exact=0.0501 (per-cell 0.8940)
+[strength=0.8 seed=1] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 1.9221  adv_loss 17.1274
+  lambd=2.0 epoch 25: task_loss 498.2675  adv_loss 2144.8360
+  lambd=2.0 epoch 50: task_loss 3767.2512  adv_loss 16004.2617
+  lambd=2.0 epoch 75: task_loss 13716.2857  adv_loss 60990.4352
+  lambd=2.0 epoch 99: task_loss 35772.5959  adv_loss 169963.9591
+=== strength=0.8 seed=1 done in 2400s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.8 seed=2 ===
+[strength=0.8 seed=2] training baseline...
+epoch 0: loss 1.0354
+epoch 25: loss 0.2176
+epoch 50: loss 0.1765
+epoch 75: loss 0.1567
+epoch 99: loss 0.1449
+[strength=0.8 seed=2] baseline in-dist=0.2642 OOD=0.1511
+[strength=0.8 seed=2] strongest color layer L=0 (Probe B acc=1.0000, chance=0.5158)
+[greedy s=0.8 seed=2] k=0: Probe B acc=1.0000  OOD exact=0.1306 (per-cell 0.9263)  In-dist exact=0.2475 (per-cell 0.9521)
+[greedy s=0.8 seed=2] k=1: Probe B acc=0.9941  OOD exact=0.0790 (per-cell 0.8888)  In-dist exact=0.1064 (per-cell 0.8903)
+[greedy s=0.8 seed=2] k=2: Probe B acc=0.9919  OOD exact=0.0343 (per-cell 0.8729)  In-dist exact=0.0534 (per-cell 0.8767)
+[greedy s=0.8 seed=2] k=3: Probe B acc=0.9904  OOD exact=0.0236 (per-cell 0.8662)  In-dist exact=0.0358 (per-cell 0.8567)
+[greedy s=0.8 seed=2] k=4: Probe B acc=0.9882  OOD exact=0.0000 (per-cell 0.6292)  In-dist exact=0.0000 (per-cell 0.6581)
+[greedy s=0.8 seed=2] k=5: Probe B acc=0.9896  OOD exact=0.0000 (per-cell 0.6326)  In-dist exact=0.0000 (per-cell 0.6597)
+[random s=0.8 seed=2] k=0: Probe B acc=1.0000  OOD exact=0.1306 (per-cell 0.9263)  In-dist exact=0.2475 (per-cell 0.9521)
+[random s=0.8 seed=2] k=1: Probe B acc=1.0000  OOD exact=0.0230 (per-cell 0.8760)  In-dist exact=0.0829 (per-cell 0.9029)
+[random s=0.8 seed=2] k=2: Probe B acc=1.0000  OOD exact=0.0364 (per-cell 0.8960)  In-dist exact=0.1234 (per-cell 0.9216)
+[random s=0.8 seed=2] k=3: Probe B acc=1.0000  OOD exact=0.0417 (per-cell 0.8975)  In-dist exact=0.1127 (per-cell 0.9231)
+[random s=0.8 seed=2] k=4: Probe B acc=1.0000  OOD exact=0.0370 (per-cell 0.8877)  In-dist exact=0.0856 (per-cell 0.9177)
+[random s=0.8 seed=2] k=5: Probe B acc=1.0000  OOD exact=0.0322 (per-cell 0.8935)  In-dist exact=0.0909 (per-cell 0.9220)
+[strength=0.8 seed=2] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.7598  adv_loss 5.7570
+  lambd=2.0 epoch 25: task_loss 0.6462  adv_loss 2.6969
+  lambd=2.0 epoch 50: task_loss 34.9230  adv_loss 488.5978
+  lambd=2.0 epoch 75: task_loss 183.6241  adv_loss 2526.4783
+  lambd=2.0 epoch 99: task_loss 587.1160  adv_loss 8362.8269
+=== strength=0.8 seed=2 done in 2353s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.7 seed=0 ===
+[strength=0.7 seed=0] training baseline...
+epoch 0: loss 1.0842
+epoch 25: loss 0.2133
+epoch 50: loss 0.1790
+epoch 75: loss 0.1616
+epoch 99: loss 0.1504
+[strength=0.7 seed=0] baseline in-dist=0.2408 OOD=0.1631
+[strength=0.7 seed=0] strongest color layer L=1 (Probe B acc=0.9968, chance=0.4949)
+[greedy s=0.7 seed=0] k=0: Probe B acc=0.9968  OOD exact=0.1494 (per-cell 0.9121)  In-dist exact=0.2236 (per-cell 0.9492)
+[greedy s=0.7 seed=0] k=1: Probe B acc=0.9945  OOD exact=0.0644 (per-cell 0.9158)  In-dist exact=0.1047 (per-cell 0.9037)
+[greedy s=0.7 seed=0] k=2: Probe B acc=0.9937  OOD exact=0.0021 (per-cell 0.8506)  In-dist exact=0.0289 (per-cell 0.8386)
+[greedy s=0.7 seed=0] k=3: Probe B acc=0.9921  OOD exact=0.0027 (per-cell 0.7948)  In-dist exact=0.0230 (per-cell 0.7651)
+[greedy s=0.7 seed=0] k=4: Probe B acc=0.9929  OOD exact=0.0072 (per-cell 0.7853)  In-dist exact=0.0244 (per-cell 0.7512)
+[greedy s=0.7 seed=0] k=5: Probe B acc=0.9897  OOD exact=0.0000 (per-cell 0.6408)  In-dist exact=0.0000 (per-cell 0.6554)
+[random s=0.7 seed=0] k=0: Probe B acc=0.9968  OOD exact=0.1494 (per-cell 0.9121)  In-dist exact=0.2236 (per-cell 0.9492)
+[random s=0.7 seed=0] k=1: Probe B acc=0.9968  OOD exact=0.1154 (per-cell 0.9257)  In-dist exact=0.1923 (per-cell 0.9434)
+[random s=0.7 seed=0] k=2: Probe B acc=0.9960  OOD exact=0.0698 (per-cell 0.9233)  In-dist exact=0.1467 (per-cell 0.9413)
+[random s=0.7 seed=0] k=3: Probe B acc=0.9953  OOD exact=0.0316 (per-cell 0.8960)  In-dist exact=0.0811 (per-cell 0.9292)
+[random s=0.7 seed=0] k=4: Probe B acc=0.9953  OOD exact=0.0337 (per-cell 0.8949)  In-dist exact=0.0757 (per-cell 0.9252)
+[random s=0.7 seed=0] k=5: Probe B acc=0.9960  OOD exact=0.0426 (per-cell 0.9011)  In-dist exact=0.0865 (per-cell 0.9266)
+[strength=0.7 seed=0] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 1.1225  adv_loss 8.1867
+  lambd=2.0 epoch 25: task_loss 7.8766  adv_loss 37.2880
+  lambd=2.0 epoch 50: task_loss 1378.6675  adv_loss 7091.8529
+  lambd=2.0 epoch 75: task_loss 10251.5377  adv_loss 50192.4807
+  lambd=2.0 epoch 99: task_loss 32957.5899  adv_loss 194470.2964
+=== strength=0.7 seed=0 done in 2330s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.7 seed=1 ===
+[strength=0.7 seed=1] training baseline...
+epoch 0: loss 1.0191
+epoch 25: loss 0.1956
+epoch 50: loss 0.1591
+epoch 75: loss 0.1423
+epoch 99: loss 0.1323
+[strength=0.7 seed=1] baseline in-dist=0.2917 OOD=0.1942
+[strength=0.7 seed=1] strongest color layer L=1 (Probe B acc=0.9977, chance=0.5457)
+[greedy s=0.7 seed=1] k=0: Probe B acc=0.9977  OOD exact=0.1855 (per-cell 0.9343)  In-dist exact=0.2895 (per-cell 0.9547)
+[greedy s=0.7 seed=1] k=1: Probe B acc=0.9961  OOD exact=0.1243 (per-cell 0.9127)  In-dist exact=0.1592 (per-cell 0.8788)
+[greedy s=0.7 seed=1] k=2: Probe B acc=0.9954  OOD exact=0.0021 (per-cell 0.7488)  In-dist exact=0.0161 (per-cell 0.6949)
+[greedy s=0.7 seed=1] k=3: Probe B acc=0.9938  OOD exact=0.0000 (per-cell 0.6807)  In-dist exact=0.0000 (per-cell 0.6546)
+[greedy s=0.7 seed=1] k=4: Probe B acc=0.9923  OOD exact=0.0000 (per-cell 0.6777)  In-dist exact=0.0000 (per-cell 0.6390)
+[greedy s=0.7 seed=1] k=5: Probe B acc=0.9892  OOD exact=0.0000 (per-cell 0.6754)  In-dist exact=0.0000 (per-cell 0.6391)
+[random s=0.7 seed=1] k=0: Probe B acc=0.9977  OOD exact=0.1855 (per-cell 0.9343)  In-dist exact=0.2895 (per-cell 0.9547)
+[random s=0.7 seed=1] k=1: Probe B acc=0.9977  OOD exact=0.1837 (per-cell 0.9343)  In-dist exact=0.2668 (per-cell 0.9539)
+[random s=0.7 seed=1] k=2: Probe B acc=0.9977  OOD exact=0.0447 (per-cell 0.8930)  In-dist exact=0.0671 (per-cell 0.9115)
+[random s=0.7 seed=1] k=3: Probe B acc=0.9977  OOD exact=0.0492 (per-cell 0.8843)  In-dist exact=0.0659 (per-cell 0.8969)
+[random s=0.7 seed=1] k=4: Probe B acc=0.9977  OOD exact=0.0420 (per-cell 0.8687)  In-dist exact=0.0477 (per-cell 0.8884)
+[random s=0.7 seed=1] k=5: Probe B acc=0.9977  OOD exact=0.0417 (per-cell 0.8695)  In-dist exact=0.0486 (per-cell 0.8894)
+[strength=0.7 seed=1] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 2.2398  adv_loss 20.9926
+  lambd=2.0 epoch 25: task_loss 338.7054  adv_loss 1346.7513
+  lambd=2.0 epoch 50: task_loss 7283.4574  adv_loss 24424.0847
+  lambd=2.0 epoch 75: task_loss 24563.6468  adv_loss 80931.2620
+  lambd=2.0 epoch 99: task_loss 57455.2060  adv_loss 226053.2760
+=== strength=0.7 seed=1 done in 4614s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.7 seed=2 ===
+[strength=0.7 seed=2] training baseline...
+epoch 0: loss 1.0439
+epoch 25: loss 0.2272
+epoch 50: loss 0.1859
+epoch 75: loss 0.1660
+epoch 99: loss 0.1541
+[strength=0.7 seed=2] baseline in-dist=0.2517 OOD=0.1565
+[strength=0.7 seed=2] strongest color layer L=1 (Probe B acc=0.9978, chance=0.5158)
+[greedy s=0.7 seed=2] k=0: Probe B acc=0.9978  OOD exact=0.1380 (per-cell 0.9287)  In-dist exact=0.2394 (per-cell 0.9496)
+[greedy s=0.7 seed=2] k=1: Probe B acc=0.9948  OOD exact=0.0915 (per-cell 0.8904)  In-dist exact=0.1294 (per-cell 0.8856)
+[greedy s=0.7 seed=2] k=2: Probe B acc=0.9852  OOD exact=0.0066 (per-cell 0.8575)  In-dist exact=0.0325 (per-cell 0.8571)
+[greedy s=0.7 seed=2] k=3: Probe B acc=0.9874  OOD exact=0.0006 (per-cell 0.8391)  In-dist exact=0.0230 (per-cell 0.8328)
+[greedy s=0.7 seed=2] k=4: Probe B acc=0.9859  OOD exact=0.0000 (per-cell 0.6241)  In-dist exact=0.0000 (per-cell 0.6161)
+[greedy s=0.7 seed=2] k=5: Probe B acc=0.9867  OOD exact=0.0000 (per-cell 0.6221)  In-dist exact=0.0000 (per-cell 0.6143)
+[random s=0.7 seed=2] k=0: Probe B acc=0.9978  OOD exact=0.1380 (per-cell 0.9287)  In-dist exact=0.2394 (per-cell 0.9496)
+[random s=0.7 seed=2] k=1: Probe B acc=0.9970  OOD exact=0.0713 (per-cell 0.9124)  In-dist exact=0.1649 (per-cell 0.9422)
+[random s=0.7 seed=2] k=2: Probe B acc=0.9970  OOD exact=0.0507 (per-cell 0.8985)  In-dist exact=0.1380 (per-cell 0.9330)
+[random s=0.7 seed=2] k=3: Probe B acc=0.9970  OOD exact=0.0355 (per-cell 0.8840)  In-dist exact=0.1067 (per-cell 0.9207)
+[random s=0.7 seed=2] k=4: Probe B acc=0.9970  OOD exact=0.0304 (per-cell 0.8871)  In-dist exact=0.0921 (per-cell 0.9234)
+[random s=0.7 seed=2] k=5: Probe B acc=0.9978  OOD exact=0.0388 (per-cell 0.8692)  In-dist exact=0.0725 (per-cell 0.8903)
+[strength=0.7 seed=2] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 2.0745  adv_loss 19.2521
+  lambd=2.0 epoch 25: task_loss 43.2103  adv_loss 165.1351
+  lambd=2.0 epoch 50: task_loss 2511.0301  adv_loss 8989.7267
+  lambd=2.0 epoch 75: task_loss 17241.6935  adv_loss 63630.4260
+  lambd=2.0 epoch 99: task_loss 49550.3216  adv_loss 174561.0218
+=== strength=0.7 seed=2 done in 1820s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.6 seed=0 ===
+[strength=0.6 seed=0] training baseline...
+epoch 0: loss 1.0914
+epoch 25: loss 0.2219
+epoch 50: loss 0.1876
+epoch 75: loss 0.1701
+epoch 99: loss 0.1590
+[strength=0.6 seed=0] baseline in-dist=0.2395 OOD=0.1669
+[strength=0.6 seed=0] strongest color layer L=1 (Probe B acc=0.9968, chance=0.4949)
+[greedy s=0.6 seed=0] k=0: Probe B acc=0.9968  OOD exact=0.1559 (per-cell 0.9151)  In-dist exact=0.2206 (per-cell 0.9401)
+[greedy s=0.6 seed=0] k=1: Probe B acc=0.9945  OOD exact=0.0710 (per-cell 0.9093)  In-dist exact=0.1064 (per-cell 0.9028)
+[greedy s=0.6 seed=0] k=2: Probe B acc=0.9929  OOD exact=0.0078 (per-cell 0.8600)  In-dist exact=0.0337 (per-cell 0.8557)
+[greedy s=0.6 seed=0] k=3: Probe B acc=0.9921  OOD exact=0.0027 (per-cell 0.8015)  In-dist exact=0.0236 (per-cell 0.7875)
+[greedy s=0.6 seed=0] k=4: Probe B acc=0.9929  OOD exact=0.0063 (per-cell 0.7906)  In-dist exact=0.0271 (per-cell 0.7720)
+[greedy s=0.6 seed=0] k=5: Probe B acc=0.9874  OOD exact=0.0000 (per-cell 0.6540)  In-dist exact=0.0000 (per-cell 0.6635)
+[random s=0.6 seed=0] k=0: Probe B acc=0.9968  OOD exact=0.1559 (per-cell 0.9151)  In-dist exact=0.2206 (per-cell 0.9401)
+[random s=0.6 seed=0] k=1: Probe B acc=0.9960  OOD exact=0.1196 (per-cell 0.9200)  In-dist exact=0.1798 (per-cell 0.9330)
+[random s=0.6 seed=0] k=2: Probe B acc=0.9960  OOD exact=0.0707 (per-cell 0.9169)  In-dist exact=0.1348 (per-cell 0.9310)
+[random s=0.6 seed=0] k=3: Probe B acc=0.9953  OOD exact=0.0355 (per-cell 0.8966)  In-dist exact=0.0695 (per-cell 0.9190)
+[random s=0.6 seed=0] k=4: Probe B acc=0.9960  OOD exact=0.0346 (per-cell 0.8957)  In-dist exact=0.0650 (per-cell 0.9154)
+[random s=0.6 seed=0] k=5: Probe B acc=0.9953  OOD exact=0.0468 (per-cell 0.9013)  In-dist exact=0.0742 (per-cell 0.9167)
+[strength=0.6 seed=0] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 2.1209  adv_loss 17.6676
+  lambd=2.0 epoch 25: task_loss 16.3131  adv_loss 59.3497
+  lambd=2.0 epoch 50: task_loss 1381.8610  adv_loss 6674.5208
+  lambd=2.0 epoch 75: task_loss 8440.9988  adv_loss 38275.4260
+  lambd=2.0 epoch 99: task_loss 26907.2472  adv_loss 119485.6054
+=== strength=0.6 seed=0 done in 1805s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.6 seed=1 ===
+[strength=0.6 seed=1] training baseline...
+epoch 0: loss 1.0266
+epoch 25: loss 0.2051
+epoch 50: loss 0.1682
+epoch 75: loss 0.1512
+epoch 99: loss 0.1411
+[strength=0.6 seed=1] baseline in-dist=0.2715 OOD=0.1942
+[strength=0.6 seed=1] strongest color layer L=0 (Probe B acc=0.9969, chance=0.5457)
+[greedy s=0.6 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1911 (per-cell 0.9274)  In-dist exact=0.2651 (per-cell 0.9453)
+[greedy s=0.6 seed=1] k=1: Probe B acc=0.9961  OOD exact=0.1374 (per-cell 0.9157)  In-dist exact=0.1676 (per-cell 0.9193)
+[greedy s=0.6 seed=1] k=2: Probe B acc=0.9954  OOD exact=0.0000 (per-cell 0.6614)  In-dist exact=0.0000 (per-cell 0.6806)
+[greedy s=0.6 seed=1] k=3: Probe B acc=0.9915  OOD exact=0.0000 (per-cell 0.6555)  In-dist exact=0.0000 (per-cell 0.6851)
+[greedy s=0.6 seed=1] k=4: Probe B acc=0.9814  OOD exact=0.0000 (per-cell 0.6494)  In-dist exact=0.0000 (per-cell 0.6785)
+[greedy s=0.6 seed=1] k=5: Probe B acc=0.9466  OOD exact=0.0000 (per-cell 0.6516)  In-dist exact=0.0000 (per-cell 0.6811)
+[random s=0.6 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1911 (per-cell 0.9274)  In-dist exact=0.2651 (per-cell 0.9453)
+[random s=0.6 seed=1] k=1: Probe B acc=0.9969  OOD exact=0.1801 (per-cell 0.9220)  In-dist exact=0.2484 (per-cell 0.9430)
+[random s=0.6 seed=1] k=2: Probe B acc=0.9969  OOD exact=0.0921 (per-cell 0.9092)  In-dist exact=0.1097 (per-cell 0.9140)
+[random s=0.6 seed=1] k=3: Probe B acc=0.9969  OOD exact=0.0531 (per-cell 0.8805)  In-dist exact=0.0730 (per-cell 0.8973)
+[random s=0.6 seed=1] k=4: Probe B acc=0.9969  OOD exact=0.0310 (per-cell 0.8547)  In-dist exact=0.0349 (per-cell 0.8753)
+[random s=0.6 seed=1] k=5: Probe B acc=0.9969  OOD exact=0.0334 (per-cell 0.8521)  In-dist exact=0.0376 (per-cell 0.8705)
+[strength=0.6 seed=1] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.7512  adv_loss 6.4839
+  lambd=2.0 epoch 25: task_loss 37.8968  adv_loss 294.0268
+  lambd=2.0 epoch 50: task_loss 2849.5225  adv_loss 20195.9066
+  lambd=2.0 epoch 75: task_loss 9480.8722  adv_loss 81434.8681
+  lambd=2.0 epoch 99: task_loss 22939.7549  adv_loss 169903.1189
+=== strength=0.6 seed=1 done in 1787s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.6 seed=2 ===
+[strength=0.6 seed=2] training baseline...
+epoch 0: loss 1.0497
+epoch 25: loss 0.2340
+epoch 50: loss 0.1927
+epoch 75: loss 0.1727
+epoch 99: loss 0.1607
+[strength=0.6 seed=2] baseline in-dist=0.2345 OOD=0.1546
+[strength=0.6 seed=2] strongest color layer L=0 (Probe B acc=0.9970, chance=0.5158)
+[greedy s=0.6 seed=2] k=0: Probe B acc=0.9970  OOD exact=0.1371 (per-cell 0.9264)  In-dist exact=0.2132 (per-cell 0.9407)
+[greedy s=0.6 seed=2] k=1: Probe B acc=0.9911  OOD exact=0.0778 (per-cell 0.8847)  In-dist exact=0.1154 (per-cell 0.8966)
+[greedy s=0.6 seed=2] k=2: Probe B acc=0.9867  OOD exact=0.0492 (per-cell 0.8705)  In-dist exact=0.0796 (per-cell 0.8845)
+[greedy s=0.6 seed=2] k=3: Probe B acc=0.9859  OOD exact=0.0218 (per-cell 0.8323)  In-dist exact=0.0340 (per-cell 0.8276)
+[greedy s=0.6 seed=2] k=4: Probe B acc=0.9845  OOD exact=0.0000 (per-cell 0.6448)  In-dist exact=0.0000 (per-cell 0.6623)
+[greedy s=0.6 seed=2] k=5: Probe B acc=0.9837  OOD exact=0.0000 (per-cell 0.6474)  In-dist exact=0.0000 (per-cell 0.6700)
+[random s=0.6 seed=2] k=0: Probe B acc=0.9970  OOD exact=0.1371 (per-cell 0.9264)  In-dist exact=0.2132 (per-cell 0.9407)
+[random s=0.6 seed=2] k=1: Probe B acc=0.9970  OOD exact=0.0262 (per-cell 0.8741)  In-dist exact=0.0733 (per-cell 0.8926)
+[random s=0.6 seed=2] k=2: Probe B acc=0.9970  OOD exact=0.0471 (per-cell 0.8934)  In-dist exact=0.1076 (per-cell 0.9110)
+[random s=0.6 seed=2] k=3: Probe B acc=0.9970  OOD exact=0.0483 (per-cell 0.8964)  In-dist exact=0.0978 (per-cell 0.9124)
+[random s=0.6 seed=2] k=4: Probe B acc=0.9970  OOD exact=0.0388 (per-cell 0.8868)  In-dist exact=0.0722 (per-cell 0.9071)
+[random s=0.6 seed=2] k=5: Probe B acc=0.9970  OOD exact=0.0340 (per-cell 0.8931)  In-dist exact=0.0775 (per-cell 0.9107)
+[strength=0.6 seed=2] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.7384  adv_loss 5.9507
+  lambd=2.0 epoch 25: task_loss 198.7678  adv_loss 1768.2415
+  lambd=2.0 epoch 50: task_loss 3990.9137  adv_loss 32094.2899
+  lambd=2.0 epoch 75: task_loss 11412.5782  adv_loss 89376.8335
+  lambd=2.0 epoch 99: task_loss 27113.0363  adv_loss 182792.6883
+=== strength=0.6 seed=2 done in 1667s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.5 seed=0 ===
+[strength=0.5 seed=0] training baseline...
+epoch 0: loss 1.0948
+epoch 25: loss 0.2265
+epoch 50: loss 0.1921
+epoch 75: loss 0.1745
+epoch 99: loss 0.1633
+[strength=0.5 seed=0] baseline in-dist=0.2304 OOD=0.1707
+[strength=0.5 seed=0] strongest color layer L=1 (Probe B acc=0.9968, chance=0.4949)
+[greedy s=0.5 seed=0] k=0: Probe B acc=0.9968  OOD exact=0.1574 (per-cell 0.9157)  In-dist exact=0.2102 (per-cell 0.9338)
+[greedy s=0.5 seed=0] k=1: Probe B acc=0.9945  OOD exact=0.0727 (per-cell 0.9021)  In-dist exact=0.1169 (per-cell 0.8992)
+[greedy s=0.5 seed=0] k=2: Probe B acc=0.9929  OOD exact=0.0086 (per-cell 0.8608)  In-dist exact=0.0376 (per-cell 0.8646)
+[greedy s=0.5 seed=0] k=3: Probe B acc=0.9921  OOD exact=0.0036 (per-cell 0.7946)  In-dist exact=0.0244 (per-cell 0.7912)
+[greedy s=0.5 seed=0] k=4: Probe B acc=0.9921  OOD exact=0.0000 (per-cell 0.7310)  In-dist exact=0.0000 (per-cell 0.7553)
+[greedy s=0.5 seed=0] k=5: Probe B acc=0.9858  OOD exact=0.0000 (per-cell 0.7024)  In-dist exact=0.0000 (per-cell 0.7241)
+[random s=0.5 seed=0] k=0: Probe B acc=0.9968  OOD exact=0.1574 (per-cell 0.9157)  In-dist exact=0.2102 (per-cell 0.9338)
+[random s=0.5 seed=0] k=1: Probe B acc=0.9960  OOD exact=0.1178 (per-cell 0.9154)  In-dist exact=0.1613 (per-cell 0.9255)
+[random s=0.5 seed=0] k=2: Probe B acc=0.9953  OOD exact=0.0719 (per-cell 0.9123)  In-dist exact=0.1243 (per-cell 0.9237)
+[random s=0.5 seed=0] k=3: Probe B acc=0.9953  OOD exact=0.0370 (per-cell 0.8948)  In-dist exact=0.0683 (per-cell 0.9113)
+[random s=0.5 seed=0] k=4: Probe B acc=0.9960  OOD exact=0.0352 (per-cell 0.8947)  In-dist exact=0.0620 (per-cell 0.9073)
+[random s=0.5 seed=0] k=5: Probe B acc=0.9960  OOD exact=0.0450 (per-cell 0.8987)  In-dist exact=0.0704 (per-cell 0.9091)
+[strength=0.5 seed=0] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 2.7540  adv_loss 27.9757
+  lambd=2.0 epoch 25: task_loss 46.7287  adv_loss 247.1512
+  lambd=2.0 epoch 50: task_loss 3252.2767  adv_loss 17543.0466
+  lambd=2.0 epoch 75: task_loss 14114.8249  adv_loss 64582.7003
+  lambd=2.0 epoch 99: task_loss 31814.7972  adv_loss 162702.9321
+=== strength=0.5 seed=0 done in 1782s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.5 seed=1 ===
+[strength=0.5 seed=1] training baseline...
+epoch 0: loss 1.0301
+epoch 25: loss 0.2097
+epoch 50: loss 0.1724
+epoch 75: loss 0.1553
+epoch 99: loss 0.1452
+[strength=0.5 seed=1] baseline in-dist=0.2579 OOD=0.1954
+[strength=0.5 seed=1] strongest color layer L=0 (Probe B acc=0.9969, chance=0.5457)
+[greedy s=0.5 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1971 (per-cell 0.9252)  In-dist exact=0.2537 (per-cell 0.9371)
+[greedy s=0.5 seed=1] k=1: Probe B acc=0.9969  OOD exact=0.1351 (per-cell 0.9075)  In-dist exact=0.1625 (per-cell 0.9126)
+[greedy s=0.5 seed=1] k=2: Probe B acc=0.9946  OOD exact=0.0000 (per-cell 0.6338)  In-dist exact=0.0000 (per-cell 0.6517)
+[greedy s=0.5 seed=1] k=3: Probe B acc=0.9907  OOD exact=0.0000 (per-cell 0.6350)  In-dist exact=0.0000 (per-cell 0.6559)
+[greedy s=0.5 seed=1] k=4: Probe B acc=0.9814  OOD exact=0.0000 (per-cell 0.6371)  In-dist exact=0.0000 (per-cell 0.6582)
+[greedy s=0.5 seed=1] k=5: Probe B acc=0.9621  OOD exact=0.0000 (per-cell 0.6451)  In-dist exact=0.0000 (per-cell 0.6633)
+[random s=0.5 seed=1] k=0: Probe B acc=0.9969  OOD exact=0.1971 (per-cell 0.9252)  In-dist exact=0.2537 (per-cell 0.9371)
+[random s=0.5 seed=1] k=1: Probe B acc=0.9969  OOD exact=0.1860 (per-cell 0.9192)  In-dist exact=0.2391 (per-cell 0.9348)
+[random s=0.5 seed=1] k=2: Probe B acc=0.9969  OOD exact=0.0850 (per-cell 0.9010)  In-dist exact=0.1020 (per-cell 0.9038)
+[random s=0.5 seed=1] k=3: Probe B acc=0.9969  OOD exact=0.0507 (per-cell 0.8750)  In-dist exact=0.0656 (per-cell 0.8857)
+[random s=0.5 seed=1] k=4: Probe B acc=0.9969  OOD exact=0.0289 (per-cell 0.8491)  In-dist exact=0.0322 (per-cell 0.8635)
+[random s=0.5 seed=1] k=5: Probe B acc=0.9969  OOD exact=0.0271 (per-cell 0.8468)  In-dist exact=0.0292 (per-cell 0.8601)
+[strength=0.5 seed=1] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.7760  adv_loss 8.9795
+  lambd=2.0 epoch 25: task_loss 1.0900  adv_loss 9.5172
+  lambd=2.0 epoch 50: task_loss 552.3525  adv_loss 5604.3361
+  lambd=2.0 epoch 75: task_loss 4179.8558  adv_loss 42743.0750
+  lambd=2.0 epoch 99: task_loss 11613.3569  adv_loss 115905.6362
+=== strength=0.5 seed=1 done in 1716s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+=== strength=0.5 seed=2 ===
+[strength=0.5 seed=2] training baseline...
+epoch 0: loss 1.0535
+epoch 25: loss 0.2393
+epoch 50: loss 0.1978
+epoch 75: loss 0.1778
+epoch 99: loss 0.1657
+[strength=0.5 seed=2] baseline in-dist=0.2293 OOD=0.1574
+[strength=0.5 seed=2] strongest color layer L=0 (Probe B acc=0.9970, chance=0.5158)
+[greedy s=0.5 seed=2] k=0: Probe B acc=0.9970  OOD exact=0.1354 (per-cell 0.9231)  In-dist exact=0.2021 (per-cell 0.9330)
+[greedy s=0.5 seed=2] k=1: Probe B acc=0.9904  OOD exact=0.0796 (per-cell 0.8790)  In-dist exact=0.1073 (per-cell 0.8877)
+[greedy s=0.5 seed=2] k=2: Probe B acc=0.9859  OOD exact=0.0477 (per-cell 0.8652)  In-dist exact=0.0796 (per-cell 0.8772)
+[greedy s=0.5 seed=2] k=3: Probe B acc=0.9852  OOD exact=0.0274 (per-cell 0.8292)  In-dist exact=0.0382 (per-cell 0.8333)
+[greedy s=0.5 seed=2] k=4: Probe B acc=0.9845  OOD exact=0.0000 (per-cell 0.6338)  In-dist exact=0.0000 (per-cell 0.6416)
+[greedy s=0.5 seed=2] k=5: Probe B acc=0.9837  OOD exact=0.0000 (per-cell 0.6262)  In-dist exact=0.0000 (per-cell 0.6330)
+[random s=0.5 seed=2] k=0: Probe B acc=0.9970  OOD exact=0.1354 (per-cell 0.9231)  In-dist exact=0.2021 (per-cell 0.9330)
+[random s=0.5 seed=2] k=1: Probe B acc=0.9970  OOD exact=0.0280 (per-cell 0.8720)  In-dist exact=0.0623 (per-cell 0.8840)
+[random s=0.5 seed=2] k=2: Probe B acc=0.9970  OOD exact=0.0411 (per-cell 0.8894)  In-dist exact=0.0886 (per-cell 0.9010)
+[random s=0.5 seed=2] k=3: Probe B acc=0.9970  OOD exact=0.0489 (per-cell 0.8936)  In-dist exact=0.0960 (per-cell 0.9042)
+[random s=0.5 seed=2] k=4: Probe B acc=0.9970  OOD exact=0.0352 (per-cell 0.8847)  In-dist exact=0.0683 (per-cell 0.8985)
+[random s=0.5 seed=2] k=5: Probe B acc=0.9970  OOD exact=0.0322 (per-cell 0.8896)  In-dist exact=0.0730 (per-cell 0.9027)
+[strength=0.5 seed=2] training adversarial (lambd=2.0)...
+  lambd=2.0 epoch 0: task_loss 0.7156  adv_loss 6.1029
+  lambd=2.0 epoch 25: task_loss 1.3654  adv_loss 32.4413
+  lambd=2.0 epoch 50: task_loss 161.3238  adv_loss 1688.3918
+  lambd=2.0 epoch 75: task_loss 1495.7756  adv_loss 19292.0302
+  lambd=2.0 epoch 99: task_loss 5551.4838  adv_loss 56377.3209
+=== strength=0.5 seed=2 done in 22953s -- checkpointed to results_confound_sweep_mac_cpu.json ===
+
+Sweep complete: 18 grid points written to results_confound_sweep_mac_cpu.json

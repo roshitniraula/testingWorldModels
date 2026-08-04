@@ -1,0 +1,2612 @@
+[
+  {
+    "strength": 1.0,
+    "seed": 0,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.49493991144845034,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.3037297462549679,
+        "per_cell_acc": 0.9698868847447264
+      },
+      "ood": {
+        "exact_match_acc": 0.13482115560990524,
+        "per_cell_acc": 0.9270143347260437
+      },
+      "probe_B_acc": 1.0,
+      "probe_A_r2": 0.8314363360404968
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.03249850924269529,
+        "per_cell_acc": 0.8820893791824025
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.0518783542039356,
+        "per_cell_acc": 0.9022808586762076
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.12373285629099583,
+          "indist_exact_match": 0.2766845557543232,
+          "ood_per_cell": 0.9257768501954549,
+          "indist_per_cell": 0.9673027231166766
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9984189723320158,
+          "ood_exact_match": 0.03249850924269529,
+          "indist_exact_match": 0.0518783542039356,
+          "ood_per_cell": 0.8820893791824025,
+          "indist_per_cell": 0.9022808586762076
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.8940711462450592,
+          "ood_exact_match": 0.01282051282051282,
+          "indist_exact_match": 0.023255813953488372,
+          "ood_per_cell": 0.814243357848009,
+          "indist_per_cell": 0.8119989399059167
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.8584980237154151,
+          "ood_exact_match": 0.017889087656529516,
+          "indist_exact_match": 0.020870602265951103,
+          "ood_per_cell": 0.8091333730868615,
+          "indist_per_cell": 0.7847263632147353
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.8276679841897233,
+          "ood_exact_match": 0.008050089445438283,
+          "indist_exact_match": 0.008050089445438283,
+          "ood_per_cell": 0.7882544888358842,
+          "indist_per_cell": 0.7612966275756974
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.7810276679841898,
+          "ood_exact_match": 0.0002981514609421586,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.7771814748558935,
+          "indist_per_cell": 0.7377509441462929
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.12373285629099583,
+          "indist_exact_match": 0.2766845557543232,
+          "ood_per_cell": 0.9257768501954549,
+          "indist_per_cell": 0.9673027231166766
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.08348240906380441,
+          "indist_exact_match": 0.22927847346452,
+          "ood_per_cell": 0.9132627708209103,
+          "indist_per_cell": 0.9603458556946929
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.07811568276684555,
+          "indist_exact_match": 0.21794871794871795,
+          "ood_per_cell": 0.9113496322798649,
+          "indist_per_cell": 0.9577618763665275
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.05426356589147287,
+          "indist_exact_match": 0.14967203339296362,
+          "ood_per_cell": 0.9014940700987213,
+          "indist_per_cell": 0.941761081295965
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.04949314251639833,
+          "indist_exact_match": 0.11776982707215265,
+          "ood_per_cell": 0.9048317100642682,
+          "indist_per_cell": 0.9323030543960776
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.03667262969588551,
+          "indist_exact_match": 0.10465116279069768,
+          "ood_per_cell": 0.9035314384151594,
+          "indist_per_cell": 0.9324604121115749
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0017889087656529517,
+        "per_cell_acc": 0.8665855032134102
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.805621811435765
+      },
+      "probe_B_acc": 0.4743083003952569
+    },
+    "elapsed_sec": 2595.779073238373,
+    "timestamp": "2026-08-02T22:46:55.432672"
+  },
+  {
+    "strength": 1.0,
+    "seed": 1,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.545651501083256,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.3586889301175015,
+        "per_cell_acc": 0.9739572596715453
+      },
+      "ood": {
+        "exact_match_acc": 0.13373531230674088,
+        "per_cell_acc": 0.9321273964131107
+      },
+      "probe_B_acc": 1.0,
+      "probe_A_r2": 0.8584831953048706
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.11836612999403696,
+        "per_cell_acc": 0.9272676075001657
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.16129994036970782,
+        "per_cell_acc": 0.9401957861260187
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.1475849731663685,
+          "indist_exact_match": 0.32051282051282054,
+          "ood_per_cell": 0.9313009342079109,
+          "indist_per_cell": 0.9702593917710197
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.11836612999403696,
+          "indist_exact_match": 0.16129994036970782,
+          "ood_per_cell": 0.9272676075001657,
+          "indist_per_cell": 0.9401957861260187
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9907192575406032,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6776320148413172,
+          "indist_per_cell": 0.7137828794805539
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9071925754060325,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6630391572252038,
+          "indist_per_cell": 0.7128967070827535
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.8329466357308585,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6419200954084675,
+          "indist_per_cell": 0.6803567879149275
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.8081979891724671,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6389634267541244,
+          "indist_per_cell": 0.6748409858874975
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.1475849731663685,
+          "indist_exact_match": 0.32051282051282054,
+          "ood_per_cell": 0.9313009342079109,
+          "indist_per_cell": 0.9702593917710197
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.1404293381037567,
+          "indist_exact_match": 0.29159212880143115,
+          "ood_per_cell": 0.9282945736434108,
+          "indist_per_cell": 0.9669797257006559
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.05247465712581992,
+          "indist_exact_match": 0.11836612999403696,
+          "ood_per_cell": 0.9133952825813291,
+          "indist_per_cell": 0.9337689657457099
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.04025044722719141,
+          "indist_exact_match": 0.10286225402504472,
+          "ood_per_cell": 0.8917130457828132,
+          "indist_per_cell": 0.9295782813224673
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.016696481812760882,
+          "indist_exact_match": 0.03488372093023256,
+          "ood_per_cell": 0.8714801563638773,
+          "indist_per_cell": 0.9060905717882463
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.017590936195587357,
+          "indist_exact_match": 0.036076326774001195,
+          "ood_per_cell": 0.8663453256476512,
+          "indist_per_cell": 0.9021814748558935
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.002787240631774543,
+        "per_cell_acc": 0.8470544716286432
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7850297649771171
+      },
+      "probe_B_acc": 0.5498839907192575
+    },
+    "elapsed_sec": 5326.748597145081,
+    "timestamp": "2026-08-03T00:15:42.187789"
+  },
+  {
+    "strength": 1.0,
+    "seed": 2,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.5157614325884268,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.31666414866294,
+        "per_cell_acc": 0.9684913800339091
+      },
+      "ood": {
+        "exact_match_acc": 0.10484967517751927,
+        "per_cell_acc": 0.9205150156955566
+      },
+      "probe_B_acc": 1.0,
+      "probe_A_r2": 0.7746179103851318
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.004472271914132379,
+        "per_cell_acc": 0.8603077585635726
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.036076326774001195,
+        "per_cell_acc": 0.8405220963360498
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.09332140727489564,
+          "indist_exact_match": 0.2787716159809183,
+          "ood_per_cell": 0.9173623534088651,
+          "indist_per_cell": 0.9652984827403432
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.004472271914132379,
+          "indist_exact_match": 0.036076326774001195,
+          "ood_per_cell": 0.8603077585635726,
+          "indist_per_cell": 0.8405220963360498
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6433197508778904,
+          "indist_per_cell": 0.652355396541443
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9541420118343196,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6360067580997814,
+          "indist_per_cell": 0.650318028225005
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9215976331360947,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6434605446233354,
+          "indist_per_cell": 0.6572252037368317
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.897189349112426,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6623351884979792,
+          "indist_per_cell": 0.6728698734512688
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.09332140727489564,
+          "indist_exact_match": 0.2787716159809183,
+          "ood_per_cell": 0.9173623534088651,
+          "indist_per_cell": 0.9652984827403432
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.002385211687537269,
+          "indist_exact_match": 0.09093619558735838,
+          "ood_per_cell": 0.8658732525011594,
+          "indist_per_cell": 0.9109686609686609
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.016398330351818723,
+          "indist_exact_match": 0.13506261180679785,
+          "ood_per_cell": 0.8906446697144371,
+          "indist_per_cell": 0.9307791691512621
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.026833631484794274,
+          "indist_exact_match": 0.1413237924865832,
+          "ood_per_cell": 0.8931458291923409,
+          "indist_per_cell": 0.9316570595640363
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.01699463327370304,
+          "indist_exact_match": 0.08706022659511031,
+          "ood_per_cell": 0.8917378917378918,
+          "indist_per_cell": 0.9301994301994302
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.03220035778175313,
+          "indist_exact_match": 0.11121049493142517,
+          "ood_per_cell": 0.8982061220433314,
+          "indist_per_cell": 0.9335453521500033
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.8077277131782946
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7295865633074935
+      },
+      "probe_B_acc": 0.518491124260355
+    },
+    "elapsed_sec": 2349.0580151081085,
+    "timestamp": "2026-08-03T00:54:51.247148"
+  },
+  {
+    "strength": 0.9,
+    "seed": 0,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.49493991144845034,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.2716294711097524,
+        "per_cell_acc": 0.9592717143924726
+      },
+      "ood": {
+        "exact_match_acc": 0.1447569550596148,
+        "per_cell_acc": 0.9093124766466252
+      },
+      "probe_B_acc": 0.9976284584980237,
+      "probe_A_r2": 0.891495406627655
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.07096004770423375,
+        "per_cell_acc": 0.9154574968528457
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.10405485986881335,
+        "per_cell_acc": 0.9038627178162062
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.13178294573643412,
+          "indist_exact_match": 0.2507453786523554,
+          "ood_per_cell": 0.907970582389187,
+          "indist_per_cell": 0.958995892135427
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9944664031620554,
+          "ood_exact_match": 0.07096004770423375,
+          "indist_exact_match": 0.10405485986881335,
+          "ood_per_cell": 0.9154574968528457,
+          "indist_per_cell": 0.9038627178162062
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9952569169960475,
+          "ood_exact_match": 0.0014907573047107932,
+          "indist_exact_match": 0.028920691711389387,
+          "ood_per_cell": 0.7734628635791426,
+          "indist_per_cell": 0.7440286887961307
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.008348240906380441,
+          "indist_exact_match": 0.022361359570661897,
+          "ood_per_cell": 0.7845607235142119,
+          "indist_per_cell": 0.7393907771814748
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9944664031620554,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6145564168819982,
+          "indist_per_cell": 0.6350046379116147
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9944664031620554,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6252650235208375,
+          "indist_per_cell": 0.6519992711853176
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.13178294573643412,
+          "indist_exact_match": 0.2507453786523554,
+          "ood_per_cell": 0.907970582389187,
+          "indist_per_cell": 0.958995892135427
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.11329755515802027,
+          "indist_exact_match": 0.22152653548002385,
+          "ood_per_cell": 0.9258513880606903,
+          "indist_per_cell": 0.9550371032929172
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.06529516994633273,
+          "indist_exact_match": 0.17322599880739414,
+          "ood_per_cell": 0.9231431789571325,
+          "indist_per_cell": 0.9532564765122905
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.02653548002385212,
+          "indist_exact_match": 0.09063804412641623,
+          "ood_per_cell": 0.8880441264162194,
+          "indist_per_cell": 0.9384648512555489
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.02534287418008348,
+          "indist_exact_match": 0.08348240906380441,
+          "ood_per_cell": 0.8886155833830253,
+          "indist_per_cell": 0.9354502087060227
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.04293381037567084,
+          "indist_exact_match": 0.1037567084078712,
+          "ood_per_cell": 0.8922927847346452,
+          "indist_per_cell": 0.9366345325647651
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.78108228980322
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7727423308818657
+      },
+      "probe_B_acc": 0.4743083003952569
+    },
+    "elapsed_sec": 46350.88667011261,
+    "timestamp": "2026-08-03T13:47:22.135852"
+  },
+  {
+    "strength": 0.9,
+    "seed": 1,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.545651501083256,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.3339517625231911,
+        "per_cell_acc": 0.9672189582903868
+      },
+      "ood": {
+        "exact_match_acc": 0.16403834260977118,
+        "per_cell_acc": 0.9288033395176253
+      },
+      "probe_B_acc": 0.9969064191802011,
+      "probe_A_r2": 0.8649100065231323
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.11836612999403696,
+        "per_cell_acc": 0.9164761810110648
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.14579606440071557,
+        "per_cell_acc": 0.8663536076326774
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.1678592725104353,
+          "indist_exact_match": 0.3047107930828861,
+          "ood_per_cell": 0.9272676075001657,
+          "indist_per_cell": 0.9641307228516531
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9953596287703016,
+          "ood_exact_match": 0.11836612999403696,
+          "indist_exact_match": 0.14579606440071557,
+          "ood_per_cell": 0.9164761810110648,
+          "indist_per_cell": 0.8663536076326774
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9953596287703016,
+          "ood_exact_match": 0.0011926058437686344,
+          "indist_exact_match": 0.027728085867620753,
+          "ood_per_cell": 0.7432004902935135,
+          "indist_per_cell": 0.654044921486782
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9945862335653519,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.611392698602001,
+          "indist_per_cell": 0.6150616179685947
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9907192575406032,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6222503809713112,
+          "indist_per_cell": 0.6315510501557013
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.988399071925754,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6236748823958126,
+          "indist_per_cell": 0.6435102365334924
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.1678592725104353,
+          "indist_exact_match": 0.3047107930828861,
+          "ood_per_cell": 0.9272676075001657,
+          "indist_per_cell": 0.9641307228516531
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.16010733452593917,
+          "indist_exact_match": 0.29844961240310075,
+          "ood_per_cell": 0.9231597429271848,
+          "indist_per_cell": 0.9645199761478831
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.03935599284436494,
+          "indist_exact_match": 0.07304710793082886,
+          "ood_per_cell": 0.8746852845690055,
+          "indist_per_cell": 0.9191761081295965
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.04054859868813357,
+          "indist_exact_match": 0.06648777579010137,
+          "ood_per_cell": 0.8789256609024051,
+          "indist_per_cell": 0.9049973497647916
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.04025044722719141,
+          "indist_exact_match": 0.049194991055456175,
+          "ood_per_cell": 0.8738322401113099,
+          "indist_per_cell": 0.89756012721129
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.04114490161001789,
+          "indist_exact_match": 0.050387596899224806,
+          "ood_per_cell": 0.872192407076128,
+          "indist_per_cell": 0.8989680646657391
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7172413199821066
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7083806476033172
+      },
+      "probe_B_acc": 0.5498839907192575
+    },
+    "elapsed_sec": 5851.143734693527,
+    "timestamp": "2026-08-03T15:24:53.282437"
+  },
+  {
+    "strength": 0.9,
+    "seed": 2,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.5157614325884268,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.28100921589363953,
+        "per_cell_acc": 0.9604295714357657
+      },
+      "ood": {
+        "exact_match_acc": 0.13295059676688323,
+        "per_cell_acc": 0.9275402460928975
+      },
+      "probe_B_acc": 1.0,
+      "probe_A_r2": 0.8391745090484619
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.0915324985092427,
+        "per_cell_acc": 0.904193997217253
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.12373285629099583,
+        "per_cell_acc": 0.9021400649307626
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.11299940369707812,
+          "indist_exact_match": 0.2608825283243888,
+          "ood_per_cell": 0.9242695289206917,
+          "indist_per_cell": 0.9590290200755317
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9985207100591716,
+          "ood_exact_match": 0.0915324985092427,
+          "indist_exact_match": 0.12373285629099583,
+          "ood_per_cell": 0.904193997217253,
+          "indist_per_cell": 0.9021400649307626
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9955621301775148,
+          "ood_exact_match": 0.017590936195587357,
+          "indist_exact_match": 0.04830053667262969,
+          "ood_per_cell": 0.8591648446299609,
+          "indist_per_cell": 0.85243987278871
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.0035778175313059034,
+          "indist_exact_match": 0.03041144901610018,
+          "ood_per_cell": 0.8643659312263964,
+          "indist_per_cell": 0.8329192340820247
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9881656804733728,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.623790830186179,
+          "indist_per_cell": 0.6178526469224144
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9866863905325444,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6225650964023057,
+          "indist_per_cell": 0.6178029550122573
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.11299940369707812,
+          "indist_exact_match": 0.2608825283243888,
+          "ood_per_cell": 0.9242695289206917,
+          "indist_per_cell": 0.9590290200755317
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.05873583780560525,
+          "indist_exact_match": 0.17740011926058438,
+          "ood_per_cell": 0.9123434704830053,
+          "indist_per_cell": 0.9501258861723978
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.042337507453786526,
+          "indist_exact_match": 0.14519976147883124,
+          "ood_per_cell": 0.897609819121447,
+          "indist_per_cell": 0.9396077651891606
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.035181872391174714,
+          "indist_exact_match": 0.11717352415026834,
+          "ood_per_cell": 0.8849466640164314,
+          "indist_per_cell": 0.9286175710594315
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.037865235539654145,
+          "indist_exact_match": 0.11001788908765653,
+          "ood_per_cell": 0.8900814947326575,
+          "indist_per_cell": 0.9319634930100046
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.03756708407871199,
+          "indist_exact_match": 0.07036374478234943,
+          "ood_per_cell": 0.8681590803683827,
+          "indist_per_cell": 0.894412972901345
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.771124031007752
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.756015826873385
+      },
+      "probe_B_acc": 0.518491124260355
+    },
+    "elapsed_sec": 2649.0807707309723,
+    "timestamp": "2026-08-03T16:09:02.366824"
+  },
+  {
+    "strength": 0.8,
+    "seed": 0,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.49493991144845034,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.2557321919902171,
+        "per_cell_acc": 0.9514207343999457
+      },
+      "ood": {
+        "exact_match_acc": 0.15576276368083156,
+        "per_cell_acc": 0.9154480451102279
+      },
+      "probe_B_acc": 0.9976284584980237,
+      "probe_A_r2": 0.88069748878479
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.07304710793082886,
+        "per_cell_acc": 0.9145878884250978
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.10256410256410256,
+        "per_cell_acc": 0.9040863314119129
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.1454979129397734,
+          "indist_exact_match": 0.2412045319022063,
+          "ood_per_cell": 0.9145713244550454,
+          "indist_per_cell": 0.9520307427284171
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9944664031620554,
+          "ood_exact_match": 0.07304710793082886,
+          "indist_exact_match": 0.10256410256410256,
+          "ood_per_cell": 0.9145878884250978,
+          "indist_per_cell": 0.9040863314119129
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9936758893280633,
+          "ood_exact_match": 0.0011926058437686344,
+          "indist_exact_match": 0.02623732856290996,
+          "ood_per_cell": 0.7581991651759094,
+          "indist_per_cell": 0.7431507983833565
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9928853754940712,
+          "ood_exact_match": 0.0008944543828264759,
+          "indist_exact_match": 0.020274299344066785,
+          "ood_per_cell": 0.7630441264162194,
+          "indist_per_cell": 0.7319866825680779
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9897233201581027,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6441065394553767,
+          "indist_per_cell": 0.6625422381236334
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9889328063241106,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.634052209633605,
+          "indist_per_cell": 0.635700324653813
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9976284584980237,
+          "ood_exact_match": 0.1454979129397734,
+          "indist_exact_match": 0.2412045319022063,
+          "ood_per_cell": 0.9145713244550454,
+          "indist_per_cell": 0.9520307427284171
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.11449016100178891,
+          "indist_exact_match": 0.2045319022063208,
+          "ood_per_cell": 0.9240707612800636,
+          "indist_per_cell": 0.9470449877426622
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.06648777579010137,
+          "indist_exact_match": 0.15742397137745975,
+          "ood_per_cell": 0.923267408732525,
+          "indist_per_cell": 0.9451898230967999
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.03041144901610018,
+          "indist_exact_match": 0.08765652951699464,
+          "ood_per_cell": 0.8942059232756907,
+          "indist_per_cell": 0.9319552110249785
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.031604054859868815,
+          "indist_exact_match": 0.08169350029815146,
+          "ood_per_cell": 0.8944295368713974,
+          "indist_per_cell": 0.9282780096733585
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.04263565891472868,
+          "indist_exact_match": 0.0936195587358378,
+          "ood_per_cell": 0.8993655999469953,
+          "indist_per_cell": 0.9290979261909494
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.783011992314318
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.781272775458822
+      },
+      "probe_B_acc": 0.4197628458498024
+    },
+    "elapsed_sec": 2426.455736875534,
+    "timestamp": "2026-08-03T16:49:28.895084"
+  },
+  {
+    "strength": 0.8,
+    "seed": 1,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.545651501083256,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.3144712430426716,
+        "per_cell_acc": 0.95995670995671
+      },
+      "ood": {
+        "exact_match_acc": 0.19356833642547927,
+        "per_cell_acc": 0.9352882567168281
+      },
+      "probe_B_acc": 0.9969064191802011,
+      "probe_A_r2": 0.8613477945327759
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.11806797853309481,
+        "per_cell_acc": 0.9135443583118001
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.14102564102564102,
+        "per_cell_acc": 0.874759822434241
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.18932617769827073,
+          "indist_exact_match": 0.29666070363744784,
+          "ood_per_cell": 0.934837341814086,
+          "indist_per_cell": 0.9569750877890413
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9961330239752514,
+          "ood_exact_match": 0.11806797853309481,
+          "indist_exact_match": 0.14102564102564102,
+          "ood_per_cell": 0.9135443583118001,
+          "indist_per_cell": 0.874759822434241
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9953596287703016,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.012522361359570662,
+          "ood_per_cell": 0.722743987278871,
+          "indist_per_cell": 0.6617140396210164
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9938128383604021,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6625422381236334,
+          "indist_per_cell": 0.6424087325250116
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9938128383604021,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6569270522758894,
+          "indist_per_cell": 0.6275342874180083
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.991492652745553,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6509971509971509,
+          "indist_per_cell": 0.6212565427681707
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.18932617769827073,
+          "indist_exact_match": 0.29666070363744784,
+          "ood_per_cell": 0.934837341814086,
+          "indist_per_cell": 0.9569750877890413
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.18127608825283245,
+          "indist_exact_match": 0.2796660703637448,
+          "ood_per_cell": 0.9338186576558669,
+          "indist_per_cell": 0.9574388789505068
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.04382826475849732,
+          "indist_exact_match": 0.07036374478234943,
+          "ood_per_cell": 0.890006956867422,
+          "indist_per_cell": 0.9141323792486583
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.04830053667262969,
+          "indist_exact_match": 0.06678592725104353,
+          "ood_per_cell": 0.8846071026303585,
+          "indist_per_cell": 0.8982061220433314
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.04084675014907573,
+          "indist_exact_match": 0.04770423375074538,
+          "ood_per_cell": 0.8691777645266018,
+          "indist_per_cell": 0.8911995627111906
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.04263565891472868,
+          "indist_exact_match": 0.05008944543828265,
+          "ood_per_cell": 0.8698734512688001,
+          "indist_per_cell": 0.894023719605115
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7306011493066309
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7216028354151612
+      },
+      "probe_B_acc": 0.5498839907192575
+    },
+    "elapsed_sec": 2399.8343670368195,
+    "timestamp": "2026-08-03T17:29:28.731672"
+  },
+  {
+    "strength": 0.8,
+    "seed": 2,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.5157614325884268,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.2642393110741804,
+        "per_cell_acc": 0.9553683839452083
+      },
+      "ood": {
+        "exact_match_acc": 0.15108022359873094,
+        "per_cell_acc": 0.9307632908630038
+      },
+      "probe_B_acc": 1.0,
+      "probe_A_r2": 0.7515968084335327
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.07901013714967203,
+        "per_cell_acc": 0.8888060690386271
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.10644007155635063,
+        "per_cell_acc": 0.8903299542834426
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.13059033989266547,
+          "indist_exact_match": 0.24746571258199165,
+          "ood_per_cell": 0.9263234612071821,
+          "indist_per_cell": 0.9521301265487312
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9940828402366864,
+          "ood_exact_match": 0.07901013714967203,
+          "indist_exact_match": 0.10644007155635063,
+          "ood_per_cell": 0.8888060690386271,
+          "indist_per_cell": 0.8903299542834426
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9918639053254438,
+          "ood_exact_match": 0.03428741800834824,
+          "indist_exact_match": 0.05336911150864639,
+          "ood_per_cell": 0.8729295037434572,
+          "indist_per_cell": 0.8766646789902603
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9903846153846154,
+          "ood_exact_match": 0.02355396541443053,
+          "indist_exact_match": 0.03577817531305903,
+          "ood_per_cell": 0.8662128138872325,
+          "indist_per_cell": 0.8566719671370834
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9881656804733728,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6291741204531902,
+          "indist_per_cell": 0.6581445040747367
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9896449704142012,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6325780162989465,
+          "indist_per_cell": 0.659709799244683
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.13059033989266547,
+          "indist_exact_match": 0.24746571258199165,
+          "ood_per_cell": 0.9263234612071821,
+          "indist_per_cell": 0.9521301265487312
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.022957662492546212,
+          "indist_exact_match": 0.0828861061419201,
+          "ood_per_cell": 0.8760352481282714,
+          "indist_per_cell": 0.902885443583118
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.03637447823494335,
+          "indist_exact_match": 0.12343470483005367,
+          "ood_per_cell": 0.8960196779964222,
+          "indist_per_cell": 0.9215778837871861
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.04174120453190221,
+          "indist_exact_match": 0.11270125223613596,
+          "ood_per_cell": 0.8975021533161068,
+          "indist_per_cell": 0.9231431789571325
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.03697078115682767,
+          "indist_exact_match": 0.08556946929039952,
+          "ood_per_cell": 0.887729410985225,
+          "indist_per_cell": 0.9176687868548333
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 1.0,
+          "ood_exact_match": 0.03220035778175313,
+          "indist_exact_match": 0.09093619558735838,
+          "ood_per_cell": 0.8935019545484661,
+          "indist_per_cell": 0.9220499569336779
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.01627906976744186,
+        "per_cell_acc": 0.8802164082687338
+      },
+      "ood": {
+        "exact_match_acc": 0.01627906976744186,
+        "per_cell_acc": 0.8729005167958657
+      },
+      "probe_B_acc": 0.518491124260355
+    },
+    "elapsed_sec": 2353.301236152649,
+    "timestamp": "2026-08-03T18:08:42.035515"
+  },
+  {
+    "strength": 0.7,
+    "seed": 0,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.49493991144845034,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.24075206358911647,
+        "per_cell_acc": 0.9473360168483984
+      },
+      "ood": {
+        "exact_match_acc": 0.1630999694283094,
+        "per_cell_acc": 0.9133589795849044
+      },
+      "probe_B_acc": 0.9968379446640316,
+      "probe_A_r2": 0.8795071840286255
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.06440071556350627,
+        "per_cell_acc": 0.9157556483137879
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.10465116279069768,
+        "per_cell_acc": 0.9037302060557875
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.14937388193202147,
+          "indist_exact_match": 0.22361359570661896,
+          "ood_per_cell": 0.9121115749022726,
+          "indist_per_cell": 0.9491817398794143
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9944664031620554,
+          "ood_exact_match": 0.06440071556350627,
+          "indist_exact_match": 0.10465116279069768,
+          "ood_per_cell": 0.9157556483137879,
+          "indist_per_cell": 0.9037302060557875
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9936758893280633,
+          "ood_exact_match": 0.0020870602265951103,
+          "indist_exact_match": 0.028920691711389387,
+          "ood_per_cell": 0.8505929901278738,
+          "indist_per_cell": 0.838642085735109
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9920948616600791,
+          "ood_exact_match": 0.0026833631484794273,
+          "indist_exact_match": 0.022957662492546212,
+          "ood_per_cell": 0.794780693036507,
+          "indist_per_cell": 0.7651229046577884
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9928853754940712,
+          "ood_exact_match": 0.007155635062611807,
+          "indist_exact_match": 0.024448419797257006,
+          "ood_per_cell": 0.7852729742264626,
+          "indist_per_cell": 0.751209169813821
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9897233201581027,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6407523355197774,
+          "indist_per_cell": 0.6554362949711787
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.14937388193202147,
+          "indist_exact_match": 0.22361359570661896,
+          "ood_per_cell": 0.9121115749022726,
+          "indist_per_cell": 0.9491817398794143
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.11538461538461539,
+          "indist_exact_match": 0.19230769230769232,
+          "ood_per_cell": 0.9256526204200622,
+          "indist_per_cell": 0.9434340422712516
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.06976744186046512,
+          "indist_exact_match": 0.14669051878354203,
+          "ood_per_cell": 0.9232839727025773,
+          "indist_per_cell": 0.9412641621943948
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9952569169960475,
+          "ood_exact_match": 0.031604054859868815,
+          "indist_exact_match": 0.08109719737626714,
+          "ood_per_cell": 0.8960445239515007,
+          "indist_per_cell": 0.9291973100112635
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9952569169960475,
+          "ood_exact_match": 0.03369111508646393,
+          "indist_exact_match": 0.07573047107930829,
+          "ood_per_cell": 0.8949181739879414,
+          "indist_per_cell": 0.9251639833035182
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.04263565891472868,
+          "indist_exact_match": 0.086463923673226,
+          "ood_per_cell": 0.9010882528324389,
+          "indist_per_cell": 0.9265553567879149
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.793571523222686
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7813307493540051
+      },
+      "probe_B_acc": 0.48458498023715413
+    },
+    "elapsed_sec": 2330.1045989990234,
+    "timestamp": "2026-08-03T18:47:32.143639"
+  },
+  {
+    "strength": 0.7,
+    "seed": 1,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.545651501083256,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.2917439703153989,
+        "per_cell_acc": 0.951857005428434
+      },
+      "ood": {
+        "exact_match_acc": 0.19418676561533704,
+        "per_cell_acc": 0.9332611832611832
+      },
+      "probe_B_acc": 0.9976798143851509,
+      "probe_A_r2": 0.8614422082901001
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.12432915921288014,
+        "per_cell_acc": 0.9126664678990261
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.1592128801431127,
+        "per_cell_acc": 0.8787600212018817
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.18545020870602266,
+          "indist_exact_match": 0.28950506857483604,
+          "ood_per_cell": 0.9342824488173326,
+          "indist_per_cell": 0.9547306698469489
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9961330239752514,
+          "ood_exact_match": 0.12432915921288014,
+          "indist_exact_match": 0.1592128801431127,
+          "ood_per_cell": 0.9126664678990261,
+          "indist_per_cell": 0.8787600212018817
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9953596287703016,
+          "ood_exact_match": 0.0020870602265951103,
+          "indist_exact_match": 0.016100178890876567,
+          "ood_per_cell": 0.748840522096336,
+          "indist_per_cell": 0.6949496455310409
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9938128383604021,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.680721195256079,
+          "indist_per_cell": 0.6545501225733784
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9922660479505027,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6776899887365003,
+          "indist_per_cell": 0.6389551447690982
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9891724671307038,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6753627509441463,
+          "indist_per_cell": 0.6391042204995694
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.18545020870602266,
+          "indist_exact_match": 0.28950506857483604,
+          "ood_per_cell": 0.9342824488173326,
+          "indist_per_cell": 0.9547306698469489
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.1836612999403697,
+          "indist_exact_match": 0.26684555754323197,
+          "ood_per_cell": 0.934257602862254,
+          "indist_per_cell": 0.9538776253892532
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.044722719141323794,
+          "indist_exact_match": 0.06708407871198568,
+          "ood_per_cell": 0.8930050354468959,
+          "indist_per_cell": 0.911498708010336
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.049194991055456175,
+          "indist_exact_match": 0.06589147286821706,
+          "ood_per_cell": 0.8843337971244948,
+          "indist_per_cell": 0.8968892864241701
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.04203935599284436,
+          "indist_exact_match": 0.04770423375074538,
+          "ood_per_cell": 0.8687305373351885,
+          "indist_per_cell": 0.8883919697873186
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9976798143851509,
+          "ood_exact_match": 0.04174120453190221,
+          "indist_exact_match": 0.048598688133571856,
+          "ood_per_cell": 0.8695090439276486,
+          "indist_per_cell": 0.8893858079904592
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.6982467912322357
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7030040260142459
+      },
+      "probe_B_acc": 0.5498839907192575
+    },
+    "elapsed_sec": 4613.9241988658905,
+    "timestamp": "2026-08-03T20:04:26.071822"
+  },
+  {
+    "strength": 0.7,
+    "seed": 2,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.5157614325884268,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.2516996525154857,
+        "per_cell_acc": 0.9509325007134344
+      },
+      "ood": {
+        "exact_match_acc": 0.15651911164828525,
+        "per_cell_acc": 0.931329841701499
+      },
+      "probe_B_acc": 0.9977810650887574,
+      "probe_A_r2": 0.8322641849517822
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.0915324985092427,
+        "per_cell_acc": 0.8903548002385212
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.12939773404889685,
+        "per_cell_acc": 0.8856092228185252
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9977810650887574,
+          "ood_exact_match": 0.13804412641621944,
+          "indist_exact_match": 0.23941562313655337,
+          "ood_per_cell": 0.9287003909096933,
+          "indist_per_cell": 0.9496372490558537
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9948224852071006,
+          "ood_exact_match": 0.0915324985092427,
+          "indist_exact_match": 0.12939773404889685,
+          "ood_per_cell": 0.8903548002385212,
+          "indist_per_cell": 0.8856092228185252
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.985207100591716,
+          "ood_exact_match": 0.00655933214072749,
+          "indist_exact_match": 0.03249850924269529,
+          "ood_per_cell": 0.8575498575498576,
+          "indist_per_cell": 0.8570529384482873
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9874260355029586,
+          "ood_exact_match": 0.0005963029218843172,
+          "indist_exact_match": 0.022957662492546212,
+          "ood_per_cell": 0.8391141588816008,
+          "indist_per_cell": 0.8328446962167892
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9859467455621301,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6240972636321473,
+          "indist_per_cell": 0.6160968660968661
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9866863905325444,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6221013052408402,
+          "indist_per_cell": 0.6143162393162394
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9977810650887574,
+          "ood_exact_match": 0.13804412641621944,
+          "indist_exact_match": 0.23941562313655337,
+          "ood_per_cell": 0.9287003909096933,
+          "indist_per_cell": 0.9496372490558537
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.07125819916517591,
+          "indist_exact_match": 0.16487775790101372,
+          "ood_per_cell": 0.9124345723182933,
+          "indist_per_cell": 0.9422000265023521
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.05068574836016696,
+          "indist_exact_match": 0.13804412641621944,
+          "ood_per_cell": 0.8985125554892996,
+          "indist_per_cell": 0.9329821771682236
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.035480023852116876,
+          "indist_exact_match": 0.10673822301729279,
+          "ood_per_cell": 0.8840439276485789,
+          "indist_per_cell": 0.920749685284569
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.03041144901610018,
+          "indist_exact_match": 0.09212880143112702,
+          "ood_per_cell": 0.887099980123236,
+          "indist_per_cell": 0.9233916385079176
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9977810650887574,
+          "ood_exact_match": 0.03875968992248062,
+          "indist_exact_match": 0.07245080500894455,
+          "ood_per_cell": 0.8691529185715232,
+          "indist_per_cell": 0.8903382362684689
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.6883963178294573
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.6933704780361757
+      },
+      "probe_B_acc": 0.518491124260355
+    },
+    "elapsed_sec": 1820.0665118694305,
+    "timestamp": "2026-08-03T20:34:46.140112"
+  },
+  {
+    "strength": 0.6,
+    "seed": 0,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.49493991144845034,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.23952919596453684,
+        "per_cell_acc": 0.9405423078229559
+      },
+      "ood": {
+        "exact_match_acc": 0.16692143075512075,
+        "per_cell_acc": 0.9157749923570774
+      },
+      "probe_B_acc": 0.9968379446640316,
+      "probe_A_r2": 0.8788487911224365
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.07096004770423375,
+        "per_cell_acc": 0.9092791360233221
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.10644007155635063,
+        "per_cell_acc": 0.9028357516729609
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.15593321407274896,
+          "indist_exact_match": 0.22063208109719737,
+          "ood_per_cell": 0.9151013714967203,
+          "indist_per_cell": 0.9400964023057047
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9944664031620554,
+          "ood_exact_match": 0.07096004770423375,
+          "indist_exact_match": 0.10644007155635063,
+          "ood_per_cell": 0.9092791360233221,
+          "indist_per_cell": 0.9028357516729609
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9928853754940712,
+          "ood_exact_match": 0.007751937984496124,
+          "indist_exact_match": 0.03369111508646393,
+          "ood_per_cell": 0.8600344530577089,
+          "indist_per_cell": 0.8557195388590737
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9920948616600791,
+          "ood_exact_match": 0.0026833631484794273,
+          "indist_exact_match": 0.02355396541443053,
+          "ood_per_cell": 0.8015387928178626,
+          "indist_per_cell": 0.787517392168555
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9928853754940712,
+          "ood_exact_match": 0.006261180679785331,
+          "indist_exact_match": 0.027131782945736434,
+          "ood_per_cell": 0.7906231365533691,
+          "indist_per_cell": 0.7719721062744318
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9873517786561264,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6539621016365202,
+          "indist_per_cell": 0.6634532564765123
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.15593321407274896,
+          "indist_exact_match": 0.22063208109719737,
+          "ood_per_cell": 0.9151013714967203,
+          "indist_per_cell": 0.9400964023057047
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.1195587358378056,
+          "indist_exact_match": 0.17978533094812166,
+          "ood_per_cell": 0.9199628967070828,
+          "indist_per_cell": 0.9330153051083284
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.0706618962432916,
+          "indist_exact_match": 0.1347644603458557,
+          "ood_per_cell": 0.9168654343072947,
+          "indist_per_cell": 0.9310276287020474
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9952569169960475,
+          "ood_exact_match": 0.035480023852116876,
+          "indist_exact_match": 0.06946929039952296,
+          "ood_per_cell": 0.8965828529782018,
+          "indist_per_cell": 0.9189939044590207
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.0345855694692904,
+          "indist_exact_match": 0.06499701848539058,
+          "ood_per_cell": 0.8957298085205062,
+          "indist_per_cell": 0.9153995229576625
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9952569169960475,
+          "ood_exact_match": 0.0468097793679189,
+          "indist_exact_match": 0.0742397137745975,
+          "ood_per_cell": 0.901336712383224,
+          "indist_per_cell": 0.9167246405618499
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7893808387994434
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7903581130325317
+      },
+      "probe_B_acc": 0.4743083003952569
+    },
+    "elapsed_sec": 1804.8244171142578,
+    "timestamp": "2026-08-03T21:04:50.969571"
+  },
+  {
+    "strength": 0.6,
+    "seed": 1,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.545651501083256,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.2714904143475572,
+        "per_cell_acc": 0.9455395794681509
+      },
+      "ood": {
+        "exact_match_acc": 0.19418676561533704,
+        "per_cell_acc": 0.9282879818594104
+      },
+      "probe_B_acc": 0.9969064191802011,
+      "probe_A_r2": 0.8322687149047852
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.13744782349433513,
+        "per_cell_acc": 0.9157225203736832
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.16756112104949314,
+        "per_cell_acc": 0.9193086198900152
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.19111508646392367,
+          "indist_exact_match": 0.265056648777579,
+          "ood_per_cell": 0.9273918372755582,
+          "indist_per_cell": 0.9452726429470616
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9961330239752514,
+          "ood_exact_match": 0.13744782349433513,
+          "indist_exact_match": 0.16756112104949314,
+          "ood_per_cell": 0.9157225203736832,
+          "indist_per_cell": 0.9193086198900152
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9953596287703016,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6614324521301266,
+          "indist_per_cell": 0.6806300934207911
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.991492652745553,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6554694229112834,
+          "indist_per_cell": 0.6851106473199496
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9814385150812065,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6493738819320215,
+          "indist_per_cell": 0.6784684953289605
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9466357308584686,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.65162658185914,
+          "indist_per_cell": 0.6811435764924137
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.19111508646392367,
+          "indist_exact_match": 0.265056648777579,
+          "ood_per_cell": 0.9273918372755582,
+          "indist_per_cell": 0.9452726429470616
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.1800834824090638,
+          "indist_exact_match": 0.24836016696481814,
+          "ood_per_cell": 0.9220002650235208,
+          "indist_per_cell": 0.9430116610349168
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.09212880143112702,
+          "indist_exact_match": 0.10971973762671437,
+          "ood_per_cell": 0.9092211621281389,
+          "indist_per_cell": 0.9139998674882396
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.05307096004770424,
+          "indist_exact_match": 0.07304710793082886,
+          "ood_per_cell": 0.8804909560723514,
+          "indist_per_cell": 0.897270257735374
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.031007751937984496,
+          "indist_exact_match": 0.03488372093023256,
+          "ood_per_cell": 0.854717418670907,
+          "indist_per_cell": 0.8752567415358113
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.033392963625521764,
+          "indist_exact_match": 0.03756708407871199,
+          "ood_per_cell": 0.8520671834625323,
+          "indist_per_cell": 0.8705111641158153
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0003096934035305048,
+        "per_cell_acc": 0.8198616702797564
+      },
+      "ood": {
+        "exact_match_acc": 0.0003096934035305048,
+        "per_cell_acc": 0.8047211038849317
+      },
+      "probe_B_acc": 0.5498839907192575
+    },
+    "elapsed_sec": 1786.798640012741,
+    "timestamp": "2026-08-03T21:34:37.772487"
+  },
+  {
+    "strength": 0.6,
+    "seed": 2,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.5157614325884268,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.2344765070252304,
+        "per_cell_acc": 0.9452837790199929
+      },
+      "ood": {
+        "exact_match_acc": 0.15455506874150174,
+        "per_cell_acc": 0.9299155629416999
+      },
+      "probe_B_acc": 0.9970414201183432,
+      "probe_A_r2": 0.7435958385467529
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.0778175313059034,
+        "per_cell_acc": 0.8846982044656463
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.11538461538461539,
+        "per_cell_acc": 0.896591134963228
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.13714967203339296,
+          "indist_exact_match": 0.2131782945736434,
+          "ood_per_cell": 0.9263979990724177,
+          "indist_per_cell": 0.9407092691976413
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9911242603550295,
+          "ood_exact_match": 0.0778175313059034,
+          "indist_exact_match": 0.11538461538461539,
+          "ood_per_cell": 0.8846982044656463,
+          "indist_per_cell": 0.896591134963228
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9866863905325444,
+          "ood_exact_match": 0.049194991055456175,
+          "indist_exact_match": 0.07960644007155634,
+          "ood_per_cell": 0.8705111641158153,
+          "indist_per_cell": 0.8844580268998874
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9859467455621301,
+          "ood_exact_match": 0.021765056648777578,
+          "indist_exact_match": 0.03398926654740608,
+          "ood_per_cell": 0.8322732392499834,
+          "indist_per_cell": 0.8275607897700921
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9844674556213018,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6447856622275226,
+          "indist_per_cell": 0.6622937785728483
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9837278106508875,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6473613595706619,
+          "indist_per_cell": 0.6700125886172398
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.13714967203339296,
+          "indist_exact_match": 0.2131782945736434,
+          "ood_per_cell": 0.9263979990724177,
+          "indist_per_cell": 0.9407092691976413
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.02623732856290996,
+          "indist_exact_match": 0.07334525939177101,
+          "ood_per_cell": 0.8740889816471212,
+          "indist_per_cell": 0.8926406281057444
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.04710793082886106,
+          "indist_exact_match": 0.10763267740011927,
+          "ood_per_cell": 0.8934356986682568,
+          "indist_per_cell": 0.9110431988338965
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.04830053667262969,
+          "indist_exact_match": 0.09779367918902802,
+          "ood_per_cell": 0.8964337772477308,
+          "indist_per_cell": 0.9124180083482409
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.03875968992248062,
+          "indist_exact_match": 0.07215265354800239,
+          "ood_per_cell": 0.8867852646922414,
+          "indist_per_cell": 0.9071092559464653
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.03398926654740608,
+          "indist_exact_match": 0.07751937984496124,
+          "ood_per_cell": 0.8930795733121315,
+          "indist_per_cell": 0.9106539455376664
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7981185400516796
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7897609819121447
+      },
+      "probe_B_acc": 0.518491124260355
+    },
+    "elapsed_sec": 1666.9584603309631,
+    "timestamp": "2026-08-03T22:02:24.758405"
+  },
+  {
+    "strength": 0.5,
+    "seed": 0,
+    "strongest_layer_L": 1,
+    "probe_B_majority_class_baseline": 0.49493991144845034,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.23035768878018956,
+        "per_cell_acc": 0.9360032609803323
+      },
+      "ood": {
+        "exact_match_acc": 0.17074289208193213,
+        "per_cell_acc": 0.915961819355277
+      },
+      "probe_B_acc": 0.9968379446640316,
+      "probe_A_r2": 0.8786314725875854
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.0727489564698867,
+        "per_cell_acc": 0.9020986550056318
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.11687537268932618,
+        "per_cell_acc": 0.8991916782614457
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.15742397137745975,
+          "indist_exact_match": 0.2101967799642218,
+          "ood_per_cell": 0.9156976744186046,
+          "indist_per_cell": 0.9338352216259193
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9944664031620554,
+          "ood_exact_match": 0.0727489564698867,
+          "indist_exact_match": 0.11687537268932618,
+          "ood_per_cell": 0.9020986550056318,
+          "indist_per_cell": 0.8991916782614457
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9928853754940712,
+          "ood_exact_match": 0.0086463923673226,
+          "indist_exact_match": 0.03756708407871199,
+          "ood_per_cell": 0.8608212416351951,
+          "indist_per_cell": 0.8645646988670245
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9920948616600791,
+          "ood_exact_match": 0.0035778175313059034,
+          "indist_exact_match": 0.024448419797257006,
+          "ood_per_cell": 0.7946481812760883,
+          "indist_per_cell": 0.7912028755052011
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9920948616600791,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.731017690320016,
+          "indist_per_cell": 0.7552839064466972
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9857707509881423,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.702362022129464,
+          "indist_per_cell": 0.7240691048830584
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9968379446640316,
+          "ood_exact_match": 0.15742397137745975,
+          "indist_exact_match": 0.2101967799642218,
+          "ood_per_cell": 0.9156976744186046,
+          "indist_per_cell": 0.9338352216259193
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.11776982707215265,
+          "indist_exact_match": 0.16129994036970782,
+          "ood_per_cell": 0.9154078049426887,
+          "indist_per_cell": 0.9254786987345127
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9952569169960475,
+          "ood_exact_match": 0.07185450208706022,
+          "indist_exact_match": 0.12432915921288014,
+          "ood_per_cell": 0.9122937785728483,
+          "indist_per_cell": 0.9237394818790168
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9952569169960475,
+          "ood_exact_match": 0.03697078115682767,
+          "indist_exact_match": 0.06827668455575432,
+          "ood_per_cell": 0.8947608162724442,
+          "indist_per_cell": 0.9112999403697079
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.035181872391174714,
+          "indist_exact_match": 0.06201550387596899,
+          "ood_per_cell": 0.8946862784072086,
+          "indist_per_cell": 0.9072583316769364
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9960474308300395,
+          "ood_exact_match": 0.04502087060226595,
+          "indist_exact_match": 0.07036374478234943,
+          "ood_per_cell": 0.8986699132047969,
+          "indist_per_cell": 0.909130060292851
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7542072483932949
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.7527413370436626
+      },
+      "probe_B_acc": 0.4743083003952569
+    },
+    "elapsed_sec": 1782.0178780555725,
+    "timestamp": "2026-08-03T22:32:06.786249"
+  },
+  {
+    "strength": 0.5,
+    "seed": 1,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.545651501083256,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.25788497217068646,
+        "per_cell_acc": 0.9399393595822167
+      },
+      "ood": {
+        "exact_match_acc": 0.19542362399505256,
+        "per_cell_acc": 0.9264455782312925
+      },
+      "probe_B_acc": 0.9969064191802011,
+      "probe_A_r2": 0.8322652578353882
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.13506261180679785,
+        "per_cell_acc": 0.9075150732127476
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.16249254621347645,
+        "per_cell_acc": 0.9125588020936858
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.19707811568276684,
+          "indist_exact_match": 0.253726893261777,
+          "ood_per_cell": 0.9251971112436229,
+          "indist_per_cell": 0.9370900417412046
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.13506261180679785,
+          "indist_exact_match": 0.16249254621347645,
+          "ood_per_cell": 0.9075150732127476,
+          "indist_per_cell": 0.9125588020936858
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9945862335653519,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6337871861127675,
+          "indist_per_cell": 0.6517176836944278
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9907192575406032,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6350460478367456,
+          "indist_per_cell": 0.6558752401775657
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9814385150812065,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6371331080633407,
+          "indist_per_cell": 0.6581859139998675
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9621036349574633,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6450589677333863,
+          "indist_per_cell": 0.6632627708209103
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.19707811568276684,
+          "indist_exact_match": 0.253726893261777,
+          "ood_per_cell": 0.9251971112436229,
+          "indist_per_cell": 0.9370900417412046
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.18604651162790697,
+          "indist_exact_match": 0.2391174716756112,
+          "ood_per_cell": 0.9191843901146227,
+          "indist_per_cell": 0.934837341814086
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.08497316636851521,
+          "indist_exact_match": 0.10196779964221825,
+          "ood_per_cell": 0.9009888690121248,
+          "indist_per_cell": 0.903804743921023
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.05068574836016696,
+          "indist_exact_match": 0.06559332140727489,
+          "ood_per_cell": 0.875,
+          "indist_per_cell": 0.8856837606837606
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.028920691711389387,
+          "indist_exact_match": 0.03220035778175313,
+          "ood_per_cell": 0.8490939508381369,
+          "indist_per_cell": 0.8634797588285961
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9969064191802011,
+          "ood_exact_match": 0.027131782945736434,
+          "indist_exact_match": 0.029218843172331546,
+          "ood_per_cell": 0.8467667130457828,
+          "indist_per_cell": 0.8601338368780229
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.842649943222876
+      },
+      "ood": {
+        "exact_match_acc": 0.0,
+        "per_cell_acc": 0.8494201851278346
+      },
+      "probe_B_acc": 0.5498839907192575
+    },
+    "elapsed_sec": 1715.8605659008026,
+    "timestamp": "2026-08-03T23:00:42.662129"
+  },
+  {
+    "strength": 0.5,
+    "seed": 2,
+    "strongest_layer_L": 0,
+    "probe_B_majority_class_baseline": 0.5157614325884268,
+    "baseline": {
+      "in_dist": {
+        "exact_match_acc": 0.22933977942287354,
+        "per_cell_acc": 0.9405331453223884
+      },
+      "ood": {
+        "exact_match_acc": 0.15742559298987763,
+        "per_cell_acc": 0.9280816168941264
+      },
+      "probe_B_acc": 0.9970414201183432,
+      "probe_A_r2": 0.7407122850418091
+    },
+    "single_direction_ablation": {
+      "ood": {
+        "exact_match_acc": 0.07960644007155634,
+        "per_cell_acc": 0.8789836347975882
+      },
+      "in_dist_control": {
+        "exact_match_acc": 0.1073345259391771,
+        "per_cell_acc": 0.8876797190750679
+      }
+    },
+    "multi_direction_ablation": {
+      "k_max": 5,
+      "greedy_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.13536076326774002,
+          "indist_exact_match": 0.20214669051878353,
+          "ood_per_cell": 0.9231348969721063,
+          "indist_per_cell": 0.9330318690783808
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9903846153846154,
+          "ood_exact_match": 0.07960644007155634,
+          "indist_exact_match": 0.1073345259391771,
+          "ood_per_cell": 0.8789836347975882,
+          "indist_per_cell": 0.8876797190750679
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9859467455621301,
+          "ood_exact_match": 0.04770423375074538,
+          "indist_exact_match": 0.07960644007155634,
+          "ood_per_cell": 0.8652438216391705,
+          "indist_per_cell": 0.8772112900019877
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.985207100591716,
+          "ood_exact_match": 0.027429934406678593,
+          "indist_exact_match": 0.0381633870005963,
+          "ood_per_cell": 0.829200622805274,
+          "indist_per_cell": 0.8332505134830717
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9844674556213018,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6337789041277413,
+          "indist_per_cell": 0.6416385079175777
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9837278106508875,
+          "ood_exact_match": 0.0,
+          "indist_exact_match": 0.0,
+          "ood_per_cell": 0.6261926058437687,
+          "indist_per_cell": 0.6330086795203075
+        }
+      ],
+      "random_rounds": [
+        {
+          "k": 0,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.13536076326774002,
+          "indist_exact_match": 0.20214669051878353,
+          "ood_per_cell": 0.9231348969721063,
+          "indist_per_cell": 0.9330318690783808
+        },
+        {
+          "k": 1,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.02802623732856291,
+          "indist_exact_match": 0.062313655336911154,
+          "ood_per_cell": 0.8719853574504737,
+          "indist_per_cell": 0.8840190816935003
+        },
+        {
+          "k": 2,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.04114490161001789,
+          "indist_exact_match": 0.0885509838998211,
+          "ood_per_cell": 0.8893692440204068,
+          "indist_per_cell": 0.9010385609222819
+        },
+        {
+          "k": 3,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.04889683959451401,
+          "indist_exact_match": 0.09600477042337507,
+          "ood_per_cell": 0.8935847743987279,
+          "indist_per_cell": 0.9042105611873054
+        },
+        {
+          "k": 4,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.035181872391174714,
+          "indist_exact_match": 0.06827668455575432,
+          "ood_per_cell": 0.8846982044656463,
+          "indist_per_cell": 0.8984959915192473
+        },
+        {
+          "k": 5,
+          "probe_B_acc": 0.9970414201183432,
+          "ood_exact_match": 0.03220035778175313,
+          "indist_exact_match": 0.07304710793082886,
+          "ood_per_cell": 0.8896094215861657,
+          "indist_per_cell": 0.9027446498376731
+        }
+      ]
+    },
+    "adversarial": {
+      "lambd": 2.0,
+      "in_dist": {
+        "exact_match_acc": 0.005523255813953488,
+        "per_cell_acc": 0.8449047157622739
+      },
+      "ood": {
+        "exact_match_acc": 0.005523255813953488,
+        "per_cell_acc": 0.8479651162790698
+      },
+      "probe_B_acc": 0.518491124260355
+    },
+    "elapsed_sec": 22952.965407133102,
+    "timestamp": "2026-08-04T05:23:15.631203"
+  }
+]
